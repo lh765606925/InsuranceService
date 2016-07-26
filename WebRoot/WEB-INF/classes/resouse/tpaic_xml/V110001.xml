@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V110</RequestType>
+		<User>zj_tianyi_dl</User>
+		<Password>666666</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<PolicyNo>2112000010812000024</PolicyNo><!-- 保单号 -->
+			<CertificateNo>341281199008188685</CertificateNo><!-- 身份证号 -->
+			<ApplyNo>2112000010812000026</ApplyNo>
+		</BasePart>
+	</Body>
+</Packet>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<books>
+	<book email="123@99.net">
+		<name>Java核心技术</name>
+		<author>Wyat</author>
+		<pageCount>1359</pageCount>
+		<printDate>2008/03/26</printDate>
+		<price>89.63</price>
+	</book>
+	<book email="456@99.net">
+		<name>三只小猪的独白</name>
+		<author>李诚铭</author>
+		<pageCount>3586</pageCount>
+		<printDate>2000/11/07</printDate>
+		<price>112.67</price>
+	</book>
+</books>

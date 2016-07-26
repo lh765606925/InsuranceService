@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="InsuranceService"
+  id="myeclipse.1412825412452"
+  context-root="/InsuranceService"
+  j2ee-spec="5.0"
+  archive="InsuranceService.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

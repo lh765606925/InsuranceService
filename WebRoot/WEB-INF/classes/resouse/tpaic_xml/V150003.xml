@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V150</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<!--投保申请号 -->
+			<ApplicationFormNo>123456789</ApplicationFormNo>
+		</BasePart>
+	</Body>
+</Packet>

@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/background/test/test4.jsp=UTF-8
+encoding//src/com/insurance/action/VehicleAction.java=gbk
+encoding//src/com/insurance/interfaceTest/MsgRealTimeTransDemo.java=gbk
+encoding//src/com/insurance/model/ClientModel.java=UTF-8
+encoding//src/com/insurance/test/VehicleTest.java=gbk
+encoding//src/com/insurance/util/TpaicConnTest.java=gbk
+encoding//src/resouse/tpaic_xml/V010.xml=gbk
+encoding//src/resouse/tpaic_xml/V040.xml=gbk
+encoding/<project>=UTF-8

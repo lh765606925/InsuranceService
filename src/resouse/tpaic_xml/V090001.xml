@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<User>chengdu_dl</User>
+		<Password>666666</Password>
+		<LoginMode>02</LoginMode>
+		<RequestType>V090</RequestType>
+	</Head>
+	<Body>
+		<Vehicle>
+			<VehicleLicenceCode>苏BIG9JS</VehicleLicenceCode>
+			<VehicleFrameNo>1UJLFLET3233UAXS3</VehicleFrameNo>
+			<EngineNo></EngineNo>
+			<LastYearPolicyNo></LastYearPolicyNo>
+			<InsuranerCertificationNo></InsuranerCertificationNo>
+			<Owner>测试</Owner>
+		</Vehicle>
+	</Body>
+</Packet>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<ResquestType>V020</ResquestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+	<Body>
+		<Vehicle>
+			<!--号牌号码 -->
+			<VehicleLicenceCode>沪AS1234</VehicleLicenceCode>
+			<!--车辆识别代号（车架号/VIN码） -->
+			<VehicleFrameNo>LV3LD830473894821</VehicleFrameNo>
+			<!--发动机号 -->
+			<EngineNo>HUS92U49</EngineNo>
+			<VehicleType></VehicleType>
+			<Owner>张三</Owner>
+			<FirstRegisterDate>20110202</FirstRegisterDate>
+		</Vehicle>
+		<VehicleModelList>
+			<VehicleModel>
+				<VehicleBrand>奔驰</VehicleBrand>
+				<AutoModelChnName></AutoModelChnName>
+				<!--车型编码(对应车型查询) -->
+				<AutoModelCode>aa3f1c96c057ffc800000000159d5a95</AutoModelCode>
+				<VehicleStyleDesc></VehicleStyleDesc>
+				<MarketDate>201002</MarketDate>
+				<!--座位数 -->
+				<VehicleSeats>5</VehicleSeats>
+				<!--排气量 -->
+				<ExhaustCapability>1.256</ExhaustCapability>
+				<!--整备质量 -->
+				<Weight>14.435</Weight>
+				<!--吨位 -->
+				<VehicleTonnages>15.47</VehicleTonnages>
+				<PurchasePrice>100000</PurchasePrice>
+				<TransmissionType>手自一体</TransmissionType>
+				<VehSeries></VehSeries>
+				<TheftProof>1</TheftProof>
+				<ImportFlag>1</ImportFlag>
+				<AirbagCount>2</AirbagCount>
+				<IsPriced>1</IsPriced>
+				<RefCode1></RefCode1>
+				<RefCode2></RefCode2>
+			</VehicleModel>
+		</VehicleModelList>
+	</Body>
+</Packet>

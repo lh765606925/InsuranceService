@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<ResquestType>V200</ResquestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>9999</ErrorCode>
+		<ErrorMessage>失败</ErrorMessage>
+	</Head>
+	<Body>
+		<Application>
+			<ApplyPolicyNo>1234545678</ApplyPolicyNo>
+			<Message>
+			</Message>
+			<Status>0</Status>
+		</Application>
+		<BizApplication>
+			<ApplyPolicyNo>1234545678</ApplyPolicyNo>
+			<Message>
+			</Message>
+			<Status>0</Status>
+		</BizApplication>
+
+	</Body>
+</Packet>

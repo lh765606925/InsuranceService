@@ -1,0 +1,770 @@
+/*------------css reset-------------------*/
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  font-size: 14px;
+  line-height: 1.4;
+  /*默认背景颜色 浅灰色*/
+  background-color: #f7f7f7;
+}
+body,
+input,
+select,
+button {
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3";
+}
+input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.subTitle {
+  color: #FFF;
+  padding: 5px 10px;
+  margin: 10px 0 0 0;
+/*  background-color: #539BF8;
+  border-top: 1px solid #5292E4;
+  border-bottom: 1px solid #5292E4;*/
+  background-color: #66CCCC;
+  border-top: 1px solid #66CCCC;
+  border-bottom: 1px solid #66CCCC;
+
+}
+.subContent{
+  padding: 5px;
+  font-size: 12px;
+  color: #999;
+  line-height: 18px;
+}
+.product-specs {
+  padding: 20px 10px;
+}
+.product-specs table thead td {
+  font-size: 16px;
+  color: #fff;
+  line-height: 28px;
+  background-color: #539BF8;
+  font-weight: bold;
+
+}
+
+.product-specs table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.product-specs table tbody th {
+  text-align: left;
+  font-weight: normal;
+}
+.product-specs table tbody th, .product-specs table tbody td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+.product-specs table tbody td {
+  color: #777;
+}
+
+
+.content-satus{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color:  #f93;
+  margin-bottom: 20px;
+}
+
+.content-text{
+  text-align: center;
+}
+
+
+/*--------------Utility--------------------*/
+/*为容器添加内边距*/
+.content-inset {
+  padding: 8px;
+}
+/*固定至页面顶部或底部*/
+.fixed-top,
+.fixed-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.fixed-top {
+  top: 0;
+}
+.fixed-bottom {
+  bottom: 0;
+}
+/*浮动*/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+/*清除浮动*/
+.clearfix {
+  *zoom: 1;
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+.border{
+  border:1px solid #ccc;
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/*保险产品列表*/
+.prop-list{
+  margin: 5px;
+  padding: 10px 0 0 0;
+  line-height: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: .25em;
+  background: #fff;
+}
+.prop-item {
+  border-bottom: 1px solid #e0e0e0;
+  display: block;
+  height: 82px;
+  padding: 6px;
+  padding-left: 110px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #666;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+.preview-img {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 90px;
+  height: 70px;
+}
+ .name,  .dist,
+ .pos,  .odds{
+  position: relative;
+  margin-bottom: 2px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.prop-item .prop-info .name {
+  padding-right: 4em;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+ .status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.dist {
+  font-size: 12px;
+  color: #999;
+}
+.price {
+  
+  color: #f93;
+}
+
+
+/*--------------图片延迟加载----------------*/
+/*
+注意这里的height是100%, 需要.lazy-img的父元素有设置宽和高,
+否则应在自己的样式中设置 .lazy-img的宽和高
+ */
+.lazy-img {
+  background: #f9f9f9 url(images/loading-white.gif) no-repeat center center;
+  width: 100%;
+  height: 100%;
+}
+.lazy-img.loaded {
+  background: none;
+}
+/*--------------按钮------------------*/
+/*
+按钮默认为白色背景灰色边框, 可以在自己的css中修改覆盖
+使用示例:
+<a class="btn">确定</a>
+ */
+ .field {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  min-width: 30px;
+  background-image: none;
+  white-space: nowrap;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn:active {
+background-position: bottom right;
+background-color: #60BFA8 ;
+border-color: #60BFA8 ;
+outline: none; /* hide dotted outline in Firefox */
+}
+
+
+.wider{
+  width : 100%;
+  margin-bottom: 10px;
+
+}
+.btn-blue{
+  background-color: #009999;
+  border-color: #009999;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn-warning{
+  background-color: #009999;
+  border-color: #009999;
+  color: #fff;
+  font-size: 14px;  
+}
+.btn.pressing {
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+.btn.disabled,
+.btn[disabled] {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+/*----------------Toolbar-------------------*/
+/* 使用方法示例:
+<div class="toolbar ">
+  <div class="float-left btn back">返回</div>
+  yes! <!-- 标题, 可省 -->
+  <div class="btn float-right">购买</div>
+</div>
+ */
+.toolbar {
+  min-height: 20px;
+  text-align: center;
+  background-color: #66CCCC;
+  /*background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#bfbfbf), color-stop(0.03, #eaeaea), to(#f1f3f9));
+  background-image: gradient(linear, 0 100%, 0 0, from(#bfbfbf), color-stop(0.03, #eaeaea), to(#f1f3f9));*/
+ /* color: #333;*/
+ color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 6px 10px;
+  font-weight: bold;
+  overflow: hidden;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.toolbar .btn {
+  background-color: #009999;
+  border-color: #009999;
+  color: #fff;
+}
+
+.toolbar .btn:active {
+  background-color: #009999;
+  border-color: #009999;
+  color: #fff;
+}
+
+.toolbar .btn.pressing {
+  color: #666;
+}
+.toolbar .btn.back {
+  -webkit-border-radius: 0 3px 3px 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0 3px 3px 0;
+  -moz-background-clip: padding;
+  border-radius: 0 3px 3px 0;
+  background-clip: padding-box;
+  position: relative;
+  margin-left: 16px;
+}
+.toolbar .btn.back::before {
+  position: absolute;
+  left: -17px;
+  top: -1px;
+  margin: 0;
+  content: " ";
+  display: block;
+  border-width: 16px 16px 16px 0;
+  border-style: solid;
+  border-color: transparent;
+  border-right-color: #009999;
+}
+/*----------------SearchBar----------------------*/
+/* 使用方法示例:
+<form class="searchbar" id="search-form">
+  <input type="text" data-role="none" name="key" class="key-text" id="key-text" placeholder="请输入姓名全称或者关键字搜索">
+  <input type="submit" value="搜索" data-role="none" class="search-btn btn" id="seach-btn">
+</form>
+*/
+.searchbar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 4px 8px;
+  padding-right: 4em;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+}
+.searchbar .key-text,
+.searchbar .search-btn {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.searchbar .key-text {
+  width: 100%;
+  padding-left: 32px;
+  background: url(images/search.png) no-repeat 4px center;
+  -webkit-background-size: 24px 24px;
+  background-size: 24px 24px;
+}
+.searchbar .search-btn {
+  position: absolute;
+  right: .2em;
+  top: 4px;
+  -webkit-appearance: button;
+  background-color: #fafafa;
+}
+.searchbar .search-btn.pressing {
+  background-color: #efefef;
+}
+/*---------------Form----------------------*/
+/* 使用方法示例:
+<!-- .form 加上 form-rounded 变成圆角 -->
+<form action="#" method="get" class="form form-rounded" id="address-form">
+  <div class="form-title">hello</div>
+  <div class="form-field">
+    <label class="form-label" for="receiver">收货人</label>
+    <input class="form-input" type="text" name="receiver" id="receiver" placeholder="请输入姓名" data-role="none">
+    <!-- 输入框右侧的图标可省 -->
+    <span class="m-icon m-icon-add" id="select-user-btn"></span>
+  </div>
+  <div class="form-field">
+      <label class="form-label" for="mobile">手机号码</label>
+      <input class="form-input" type="text" name="mobile" id="mobile" placeholder="11位数字" data-role="none">
+  </div>
+</form>
+*/
+.form {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 3px rgba(204, 204, 204, 0.8);
+  -moz-box-shadow: 1px 2px 3px rgba(204, 204, 204, 0.8);
+  box-shadow: 1px 2px 3px rgba(204, 204, 204, 0.8);
+}
+.form.form-rounded {
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.form.form-rounded > :first-child {
+  -webkit-border-radius: 3px 3px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px 3px 0 0;
+  -moz-background-clip: padding;
+  border-radius: 3px 3px 0 0;
+  background-clip: padding-box;
+}
+.form.form-rounded > :last-child {
+  -webkit-border-radius: 0 0 4px 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0 0 4px 4px;
+  -moz-background-clip: padding;
+  border-radius: 0 0 4px 4px;
+  background-clip: padding-box;
+  border-bottom-width: 0;
+}
+.form .form-field {
+  padding: 6px;
+  /*如果label文字过长,请增大padding-left的值*/
+  padding-left: 8em;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.form .form-field .m-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 32px;
+  background-color: #fff;
+  -webkit-background-size: 28px 28px;
+  -moz-background-size: 28px 28px;
+  background-size: 28px 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form .form-field .m-icon.m-icon-add {
+  background-image: url(images/add.png);
+}
+.form .form-field .form-label {
+  position: absolute;
+  left: 1em;
+  line-height: 1.5em;
+}
+.form .form-field .form-input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.form .form-title {
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 1em;
+  position: relative;
+ /* background-color: #539BF8;*/
+  /*background-color: #ddd;*/
+  background-color: #66CCCC;
+  font-weight: bold;
+  color: #fff;
+/*  color: #333;*/
+}
+.form .form-title .m-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 32px;
+  background-color: #fff;
+  -webkit-background-size: 28px 28px;
+  -moz-background-size: 28px 28px;
+  background-size: 28px 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form .form-title .m-icon.m-icon-add {
+  background-image: url(images/add.png);
+}
+.form .form-title .form-label {
+  position: absolute;
+  left: 1em;
+  line-height: 1.5em;
+}
+.form .form-title .form-input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.form-label span{
+  color: red;
+  margin-right: 5px;
+}
+
+.form-title span{
+  color: #fff;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+/*----------------单选框------------------*/
+.radiofield{
+    width: 100%;margin: 0;padding:0 0;
+}
+.radiofield li {
+    color: #808080;
+    text-align: center;
+    display: inline-block;
+    padding: 2px 18px;
+    margin-left: 10px;
+    border: 1px solid #CAC8C8;
+    border-radius: 3px;
+    -webkit-border-radius : 3px;
+    display: inline-block;
+}
+
+.radiofield .selected {
+    color: #66CCCC;
+    border-color: #66CCCC;
+}
+
+
+
+/*----------------Table------------------*/
+/* 使用方法示例, 一定要按照标准表格来写: 有thead, tbody
+<!-- .table 加上 table-rounded 变成圆角 -->
+<table class="table table-rounded">
+  <thead>
+    <tr>
+      <th colspan="2">规格参数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>包装</td>
+      <td>袋装</td>
+    </tr>
+    <tr>
+      <td>包装方式</td>
+      <td>普通方式</td>
+    </tr>
+    <tr>
+      <td>品牌</td>
+      <td>其他</td>
+    </tr>
+    <tr>
+      <td>食品产地</td>
+      <td>国产</td>
+    </tr>
+  </tbody>
+</table>
+ */
+.table {
+  width: 100%;
+  margin: 5px 0;
+}
+.table th,
+.table td {
+  border: 1px solid #cccccc;
+  padding: 6px;
+}
+.table th {
+  text-align: left;
+  /*background-color: #ddd;*/
+ /* background-color: #539BF8;*/
+ background-color: #66CCCC;
+  font-weight: bold;
+/*  color: #333;*/
+  color: #fff;
+}
+.table td {
+  color: #777;
+}
+.table.table-rounded {
+  border-collapse: separate;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.table.table-rounded th,
+.table.table-rounded td {
+  border-width: 0 1px 1px 0;
+}
+.table.table-rounded > :first-child th,
+.table.table-rounded > :first-child td {
+  border-top: 1px solid #cccccc;
+}
+.table.table-rounded tr > :first-child {
+  border-left: 1px solid #cccccc;
+}
+.table.table-rounded thead > tr:first-child > th:first-child {
+  -webkit-border-radius: 4px 0 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px 0 0 0;
+  -moz-background-clip: padding;
+  border-radius: 4px 0 0 0;
+  background-clip: padding-box;
+}
+.table.table-rounded thead > tr:first-child > th:last-child {
+  -webkit-border-radius: 0 4px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0 4px 0 0;
+  -moz-background-clip: padding;
+  border-radius: 0 4px 0 0;
+  background-clip: padding-box;
+}
+.table.table-rounded thead > tr:first-child > th:only-child {
+  -webkit-border-radius: 4px 4px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px 4px 0 0;
+  -moz-background-clip: padding;
+  border-radius: 4px 4px 0 0;
+  background-clip: padding-box;
+}
+.table.table-rounded tbody > tr:last-child > td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0 0 0 4px;
+  -moz-background-clip: padding;
+  border-radius: 0 0 0 4px;
+  background-clip: padding-box;
+}
+.table.table-rounded tbody > tr:last-child > td:last-child {
+  -webkit-border-radius: 0 0 4px 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0 0 4px 0;
+  -moz-background-clip: padding;
+  border-radius: 0 0 4px 0;
+  background-clip: padding-box;
+}
+
+.tip{
+  color: #ed9c28;
+}
+
+/*---------------列表----------------------*/
+/* 使用示例:
+<--list-separate 使列表项目变为分开的项目, list-linked 使每个项目右侧加个小箭头-->
+<ul class="list list-separate list-linked">
+  <li class="item">
+    <div class="inner">abccdd</div>
+  </li>
+  <li class="item">
+    <div class="inner">abccdd</div>
+  </li>
+  <li class="item">
+    <div class="inner">abccdd</div>
+  </li>
+</ul>
+ */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list .item {
+  display: block;
+  padding: 8px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.list .item .inner {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list .item .inner > * {
+  display: inline-block;
+}
+.list.list-separate .item {
+  margin: 8px 0;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.list.list-linked .item {
+  cursor: pointer;
+}
+.list.list-linked .item .inner {
+  padding-right: 14px;
+  background: url(images/arrow-right.png) no-repeat right center;
+}
+/*------------幻灯片相关css-------------*/
+/*对应非全屏的css*/
+.m-carousel-inner .m-item {
+  background: #f9f9f9 url(images/loading-white.gif) no-repeat center center;
+  width: 100%;
+  height: 100%;
+}
+/*
+  对应全屏的css
+  .m-caroucel上得添加 m-fullscreen类
+ */
+.m-carousel.m-fullscreen .m-carousel-inner {
+  height: 100%;
+}
+.m-carousel.m-fullscreen .m-carousel-inner .m-item {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  /*这里使用的是黑色的加载动画, 如果背景是白色的, 则替换为 loading-white.gif */
+  background-image: url(images/loading-black.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.m-carousel.m-fullscreen .m-carousel-inner .m-item.loaded {
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.result-border{
+  border: 2px solid #66CCCC;
+  margin: 20px 8px;
+  padding: 30px 8px;
+  border-radius: .25em;
+}

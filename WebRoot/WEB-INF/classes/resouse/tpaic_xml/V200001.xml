@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V200</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<ApplyPolicyNo>123456789</ApplyPolicyNo>	
+            <BizApplyPolicyNo>2110010451515151</BizApplyPolicyNo>	
+            <BankCardNo>12334456</BankCardNo>	
+            <DocType>5</DocType>		
+		</BasePart>
+	</Body>
+</Packet>

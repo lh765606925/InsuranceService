@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK"?>
+<eaiAhsXml>
+	<Header>
+		<TRAN_CODE>101083</TRAN_CODE>
+		<BANK_CODE>7966</BANK_CODE>
+		<BRNO>79660000</BRNO>
+		<TELLERNO/>
+		<BK_ACCT_DATE></BK_ACCT_DATE>
+		<BK_ACCT_TIME></BK_ACCT_TIME>
+		<BK_SERIAL></BK_SERIAL>
+		<BK_ORGN_SRIL>bb551d11ca2100214822</BK_ORGN_SRIL>
+		<BK_TRAN_CHNL>WEB</BK_TRAN_CHNL>
+		<REGION_CODE>000000</REGION_CODE>
+		<PTP_CODE/>
+	</Header>
+	<Request>
+		<policyInfo>
+			<policyInfo>
+				<policyNo></policyNo>
+				<validateCode>GUjygQuMnZoZxHygUh</validateCode>
+				<partnerName>JABXDL</partnerName>
+			</policyInfo>
+		</policyInfo>
+	</Request>
+</eaiAhsXml>

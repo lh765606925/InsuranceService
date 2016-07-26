@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<RequestType>V120</RequestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+	<Body>
+		<PolicyList>
+			<Policy>
+				<PolicyNo>2112000010812000024</PolicyNo>
+				<InsuredName>张三</InsuredName><!-- 被保人 -->
+				<ApplicantName>张三</ApplicantName><!-- 投保人 -->
+				<PolicyStatus>有效</PolicyStatus><!-- 保单状态 -->
+				<PolicyType>1</PolicyType><!-- 商业单 -->
+				<Amount>100000</Amount><!-- 保额 -->
+				<Premium>2000</Premium><!-- 保费 -->
+				<InsuranceBeginDate>20120509</InsuranceBeginDate><!-- 起期 -->
+				<InsuranceEndDate>20130508</InsuranceEndDate><!-- 止期 -->
+			</Policy>
+			<Policy>
+				<PolicyNo>2112000010512000024</PolicyNo>
+				<InsuredName>张三</InsuredName><!-- 被保人 -->
+				<ApplicantName>张三</ApplicantName><!-- 投保人 -->
+				<PolicyStatus>有效</PolicyStatus><!-- 保单状态 -->
+				<PolicyType>2</PolicyType><!-- 商业单 -->
+				<Amount>100000</Amount><!-- 保额 -->
+				<Premium>1000</Premium><!-- 保费 -->
+				<InsuranceBeginDate>20120509</InsuranceBeginDate><!-- 起期 -->
+				<InsuranceEndDate>20130508</InsuranceEndDate><!-- 止期 -->
+			</Policy>
+		</PolicyList>
+		<Vehicle><!-- 车辆信息 -->
+			<VehicleLicenceCode>沪A11111</VehicleLicenceCode> <!-- 车牌号 -->
+			<LicenseTypeCode>02</LicenseTypeCode><!-- 号牌种类 -->
+			<VehicleType>1</VehicleType><!-- 车辆种类 -->
+			<UsageAttributeCode>2</UsageAttributeCode> <!-- 使用性质 1营业，2非营业 -->
+			<FirstRegisterDate>20100101</FirstRegisterDate><!-- 车辆初始登记日期 -->
+			<VehicleFrameNo>11111111111111111</VehicleFrameNo> <!-- 车辆识别代号（车架号/VIN码） -->
+			<EngineNo>22222</EngineNo><!-- 发动机号 -->
+			<VehicleStyle>K31</VehicleStyle>  <!-- 交管车辆种类 -->
+			<VehicleSeats>5</VehicleSeats> <!-- 座位数 -->
+			<ExhaustCapability>1600</ExhaustCapability><!-- 排气量 -->
+			<Owner>张三</Owner><!--车主名称 -->
+		</Vehicle>
+		<ClaimInfoList>
+			<ClaimInfo>
+				<ReportNo>5112000010812000203</ReportNo><!-- 报案号 -->
+				<ReportPersonName>张三</ReportPersonName><!-- 报案人 -->
+				<AccidentTime>201201011310</AccidentTime><!-- 出险时间 -->
+				<ReportCaseTime>20120102</ReportCaseTime><!-- 报案时间 -->
+				<EndCaseTime>201201211310</EndCaseTime><!-- 结案时间 -->
+				<DriverName>张三</DriverName><!-- 驾驶员 -->
+				<AccidentPlace>上海市浦东新区金海路1000号</AccidentPlace><!-- 出险地点 -->
+				<Description>两车追尾</Description><!-- 出险描述 -->
+				<Liability>全责</Liability><!-- 责任比例 -->
+				<OptionType>当事人自行协商处理</OptionType><!-- 事故处理类型 -->
+				<AccidentReason>碰撞</AccidentReason><!-- 出险原因 -->
+				<SelfPayment></SelfPayment><!-- 互碰自陪 1 是 0 否 -->
+				<CaseStatus></CaseStatus>
+				<PayInfoList>
+					<PayInfo>
+						<PayAmount>1000</PayAmount><!-- 支付金额 -->
+						<PayType>银行转账</PayType><!-- 支付方式 -->
+						<BankAccount>62258821****6488</BankAccount><!-- 需要特殊处理，银行账号 -->
+						<BankName>招商银行</BankName><!-- 开户行名称 -->
+						<BankAccountName>张三</BankAccountName><!-- 收款人 -->
+						<PaymentTime>201205151000</PaymentTime><!-- 支付时间 -->
+					</PayInfo>
+				</PayInfoList>
+			</ClaimInfo>
+		</ClaimInfoList>
+	</Body>
+</Packet>

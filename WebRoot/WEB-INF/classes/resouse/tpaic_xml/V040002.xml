@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<ResquestType> V040</ResquestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+	<Body>
+		<BasePart>
+			<!--保费计算流水号 -->
+			<TpCalulateNo>556563345</TpCalulateNo>
+			<RenewalFlag>0</RenewalFlag>
+			<!--校验码图片转换后的串 -->
+			<CheckCode></CheckCode>
+			<!--问题描述(问题,参考答案) -->
+			<Question></Question>
+		</BasePart>
+		<BizApplication>
+			<!--基准保费 -->
+			<TotalStandardPremium>8944.00</TotalStandardPremium>
+			<!--复核保费 -->
+			<TotalActualPremium>8228.48</TotalActualPremium>
+			<!--印花税 -->
+			<StampTax></StampTax>
+			<!--车损系数 -->
+			<TotalRatioOD>0.92</TotalRatioOD>
+			<!--三者系数 -->
+			<TotalRatioTP>1.0</TotalRatioTP>
+			<!--盗抢险系数 -->
+			<TotalRatioTHEFT>1.0</TotalRatioTHEFT>
+			<!--其他系数 -->
+			<TotalRatioOTHER>1.0</TotalRatioOTHER>
+			<!--不可改特别约定 -->
+			<FixedSpecialPromise></FixedSpecialPromise>
+			<!--可改特别约定 -->
+			<AlterableSpecialPromise></AlterableSpecialPromise>
+		</BizApplication>
+		<TPFApplication>
+			<!--基准保费 -->
+			<TotalStandardPremium>950.00</TotalStandardPremium>
+			<!--复核保费 -->
+			<TotalActualPremium>950.00</TotalActualPremium>
+			<!--印花税 -->
+			<StampTax></StampTax>
+			<!--车损系数 -->
+			<TotalRatioOD>1.0</TotalRatioOD>
+			<!--三者系数 -->
+			<TotalRatioTP>1.0</TotalRatioTP>
+			<!--盗抢险系数 -->
+			<TotalRatioTHEFT>1.0</TotalRatioTHEFT>
+			<!--其他系数 -->
+			<TotalRatioOTHER>1.0</TotalRatioOTHER>
+			<!--不可改特别约定 -->
+			<FixedSpecialPromise></FixedSpecialPromise>
+			<!--可改特别约定 -->
+			<AlterableSpecialPromise></AlterableSpecialPromise>
+		</TPFApplication>
+		<RiskItem>
+			<!--违法调整系数 -->
+			<PeccancyAdjustRatio>1.00</PeccancyAdjustRatio>
+			<!--理赔调整系数 -->
+			<ClaimAdjustRatio>1.00</ClaimAdjustRatio>
+			<!--违法浮动原因代码 -->
+			<PeccancyAdjustReason></PeccancyAdjustReason>
+			<!--理赔浮动原因代码 -->
+			<ClaimAdjustReason></ClaimAdjustReason>
+		</RiskItem>
+		<PeccList>
+			<PeccData>
+				<!--违法编号 -->
+				<PeccancyId>
+				</PeccancyId>
+				<!--决定书编号 -->
+				<DecisionId></DecisionId>
+				<!--决定书类型 -->
+				<DecisionType></DecisionType>
+				<!--违法时间 -->
+				<PeccancyTime></PeccancyTime>
+				<!--违法处理时间 -->
+				<ManageTime></ManageTime>
+				<!--违法地点 -->
+				<PeccancyPlace></PeccancyPlace>
+				<!--违法行为代码 -->
+				<PeccancyCode></PeccancyCode>
+				<!--违法驾驶员驾驶证号 -->
+				<DrivingLicence></DrivingLicence>
+				<!--处理状态(是否已处理) -->
+				<ProcessingStatus></ProcessingStatus>
+			</PeccData>
+		</PeccList>
+		<ClaimList>
+			<ClaimData>
+				<!--保险公司 -->
+				<InsuranceCompany>
+				</InsuranceCompany>
+				<!--立案号 -->
+				<RegisreationNo></RegisreationNo>
+				<!--赔案号 -->
+				<ClaimNumber></ClaimNumber>
+				<!--出险时间 -->
+				<AccidentTime></AccidentTime>
+				<!--结案时间 -->
+				<FinishCaseTime></FinishCaseTime>
+				<!--是否发生有责任交通死亡事故 -->
+				<AccidentDeath></AccidentDeath>
+				<!--赔款总金额 -->
+				<ClaimAmount>2000</ClaimAmount>
+			</ClaimData>
+		</ClaimList>
+		<CoverageList>
+			<Coverage>
+				<!--险种代码 -->
+				<CoverageCode> CBD </CoverageCode>
+				<!--基准保费 -->
+				<TotalStandardPremium>8944.00</TotalStandardPremium>
+				<!--复核保费 -->
+				<TotalActualPremium>8228.48</TotalActualPremium>
+			</Coverage>
+			<Coverage>
+				<!--险种代码 -->
+				<CoverageCode> TPF </CoverageCode>
+				<!--基准保费 -->
+				<TotalStandardPremium>950.00</TotalStandardPremium>
+				<!--复核保费 -->
+				<TotalActualPremium>950.00</TotalActualPremium>
+			</Coverage>
+		</CoverageList>
+		<OwnerMessage>
+			<!--车主提示信息类型 -->
+			<OwnerMessageType>01</OwnerMessageType>
+		</OwnerMessage>
+		<VehicleTax>
+			<!--当年应缴 -->
+			<VehicleTaxAmountThis> 240.00 </VehicleTaxAmountThis>
+			<!--往年补缴 -->
+			<VehicleTaxAmountLast>0.00</VehicleTaxAmountLast>
+			<!--合计金额 -->
+			<VehicleTaxAmount> 240.00</VehicleTaxAmount>
+			<!--滞纳天数 -->
+			<LateDay>0</LateDay>
+			<!--滞纳金 -->
+			<LateFeeAmount>0.00</LateFeeAmount>
+			<!--上年交强险止期 -->
+			<LastYearEndDate></LastYearEndDate>
+			<!--车船税合计金额标识 -->
+			<TaxAmountFlag></TaxAmountFlag>
+			<!--算税标识 -->
+			<CalcTaxFlagName></CalcTaxFlagName>
+		</VehicleTax>
+	</Body>
+</Packet>

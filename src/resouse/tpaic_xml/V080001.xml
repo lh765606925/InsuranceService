@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V080</RequestType>
+		<User>12345</User>
+		<Password>12345</Password>
+	</Head>
+	<Body>
+
+		<BasePart>
+			<!-- 暂存申请号 -->
+			<TemporaryNo>794651541212</TemporaryNo>
+		</BasePart>
+	</Body>
+</Packet>

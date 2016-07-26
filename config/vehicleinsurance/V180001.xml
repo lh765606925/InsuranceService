@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V180</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<ApplyPolicyNo>2110010451515151</ApplyPolicyNo>
+			<DocType>3</DocType>
+			<WarrantNo>1</WarrantNo>
+			<WarrantBank>000</WarrantBank>
+			<PayNo>20214566</PayNo>
+		</BasePart>
+	</Body>
+</Packet>

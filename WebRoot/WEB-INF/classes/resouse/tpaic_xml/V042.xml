@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V040</RequestType>
+		<User>shenzhen_dl</User>
+		<Password>666666</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<!--安盛天平投保查询流水号 -->
+			<TpApplyQueryNo>V030SHENZHEN_DL20150000000034</TpApplyQueryNo>
+		</BasePart>
+		<Vehicle>
+			<!--号牌号码 -->
+			<VehicleLicenceCode>沪AS1234</VehicleLicenceCode>
+			<!--号牌种类代码 -->
+			<LicenseTypeCode>2</LicenseTypeCode>
+			<!--使用性质代码 -->
+			<UsageAttributeCode>1</UsageAttributeCode>
+			<!--所属性质 -->
+			<OwnershipAttributeCode>1</OwnershipAttributeCode>
+			<!--车辆初始登记日期。格式：精确到天 -->
+			<FirstRegisterDate>20120501</FirstRegisterDate>
+			<!--车辆识别代号（车架号/VIN码） -->
+			<VehicleFrameNo>LV3LD830473894821</VehicleFrameNo>
+			<!--发动机号 -->
+			<EngineNo>HUS92U49</EngineNo>
+			<!--车辆种类代码 -->
+			<VehicleType>1</VehicleType>
+			<!--交管车辆种类 -->
+			<VehicleStyle>K33</VehicleStyle>
+			<!--车型编码(对应车型查询) -->
+			<AutoModelCode>WZCABD0005</AutoModelCode>
+			<!--车辆品牌 -->
+			<VehicleBrand>陕汽</VehicleBrand>
+			<!--特殊车投保标志 -->
+			<SpecialCarFlag />
+			<!--转移登记日期 -->
+			<TransferDate />
+			<!--外地车标志 -->
+			<EcdemicVehicleFlag>0</EcdemicVehicleFlag>
+			<!--是否车贷投保多年标志 -->
+			<LoanVehicleFlag>0</LoanVehicleFlag>
+			<!--车队标志 -->
+			<isMotorcade>0</isMotorcade>
+			<!--车队号 -->
+			<FleetNo />
+			<!--核定载客数 -->
+			<VehicleSeats>5</VehicleSeats>
+			<!--排气量 -->
+			<ExhaustCapability>1.256</ExhaustCapability>
+			<!--整备质量 -->
+			<Weight>14.435</Weight>
+			<!--吨位 -->
+			<VehicleTonnages>15.47</VehicleTonnages>
+			<!--新车购置价 -->
+			<PurchasePrice>140000</PurchasePrice>
+			<!--功率 -->
+			<Power>0</Power>
+			<!--能源类型 -->
+			<FuelType>1</FuelType>
+			<!--开具车辆来历凭证所载日 -->
+			<VehicleCertificateDate />
+			<!--车辆来历凭证编号 -->
+			<VehicleCertificateNo />
+			<!--车辆来历凭证种类 -->
+			<VehicleCertificateType />
+			<!--指定查询地区代码 -->
+			<AppointAreaCode>1</AppointAreaCode>
+		</Vehicle>
+		<Applicant personType='1'>
+			<Personnel>
+				<PersonnelName>张三</PersonnelName>
+				<CertificateType>1</CertificateType>
+				<CertificateNo>43092219890205423X</CertificateNo>
+				<MobileTelephone>13268527439</MobileTelephone>
+				<HomeAreaCode>1</HomeAreaCode>
+				<HomeTelephone>1</HomeTelephone>
+				<OfficeAreaCode>1</OfficeAreaCode>
+				<OfficeTelephone>1</OfficeTelephone>
+				<Postcode>10000</Postcode>
+				<Email>aa@hotmail.com</Email>
+				<DriverLicenseExpirationDate>20161203</DriverLicenseExpirationDate>
+				<DrivingExpirationDate>20121203</DrivingExpirationDate>
+				<Address>浦东金桥</Address>
+				<Gender>M</Gender>
+				<Birthday>19801202</Birthday>
+			</Personnel>
+		</Applicant>
+		<Insured personType='0'>
+			<Group>
+				<GroupName>安盛天平汽车</GroupName>
+				<GroupAbbr>安盛天平汽车</GroupAbbr>
+				<CertificateType>1</CertificateType>
+				<CertificateNo>43092219890205423X</CertificateNo>
+				<BusinessRegisterId>11111</BusinessRegisterId>
+				<Address>浦东金桥</Address>
+				<IndustryCode>1</IndustryCode>
+				<BankCode>1</BankCode>
+				<BankAccount>1111</BankAccount>
+				<LinkManName>张三</LinkManName>
+				<LinkManSexCode>M</LinkManSexCode>
+				<LinkManMobileTelephone>13000000000</LinkManMobileTelephone>
+				<LinkManOfficeAreaCode>031</LinkManOfficeAreaCode>
+				<LinkManOfficeTelephone>50153223</LinkManOfficeTelephone>
+				<LinkManDepartment>1</LinkManDepartment>
+				<LinkManPosition>1</LinkManPosition>
+			</Group>
+		</Insured>
+		<VehicleOwner personType='0'>
+			<Group>
+				<GroupName>安盛天平汽车</GroupName>
+				<GroupAbbr>安盛天平汽车</GroupAbbr>
+				<CertificateType>1</CertificateType>
+				<CertificateNo>43092219890205423X</CertificateNo>
+				<BusinessRegisterId>11111</BusinessRegisterId>
+				<Address>浦东金桥</Address>
+				<IndustryCode>1</IndustryCode>
+				<BankCode>1</BankCode>
+				<BankAccount>1111</BankAccount>
+				<LinkManName>张三</LinkManName>
+				<LinkManSexCode>M</LinkManSexCode>
+				<LinkManMobileTelephone>13000000000</LinkManMobileTelephone>
+				<LinkManOfficeAreaCode>031</LinkManOfficeAreaCode>
+				<LinkManOfficeTelephone>50153223</LinkManOfficeTelephone>
+				<LinkManDepartment>1</LinkManDepartment>
+				<LinkManPosition>1</LinkManPosition>
+			</Group>
+		</VehicleOwner>
+		<DriverList personType='1'>
+			<Driver>
+				<!--驾驶员名称 -->
+				<PersonnelName>张三</PersonnelName>
+				<!--出生日期 -->
+				<Birthday>19800112</Birthday>
+				<!-- 接口文档1.5.5-3.3.3报文范例：字段名为驾驶证类型：DriverTypeCode -->
+				<DriveVehicleType>C1</DriveVehicleType>
+				<!--驾驶证号 -->
+				<DriveLicenseNo>310115198001123038</DriveLicenseNo>
+				<!--驾驶证首次发证日期 -->
+				<FirstIssueDate>20001225</FirstIssueDate>
+				<!--是否主驾驶员 -->
+				<IsMajorDriver>1</IsMajorDriver>
+				<!--性别 -->
+				<SexCode>M</SexCode>
+			</Driver>
+		</DriverList>
+		<BizApplication>
+			<!--上年投保保单号 -->
+			<LastPolicyNo> 2101000010412000173</LastPolicyNo>
+			<!--起保日期 -->
+			<EffectiveDate>20120525</EffectiveDate>
+			<!--终保日期 -->
+			<ExpireDate>20130524</ExpireDate>
+		</BizApplication>
+		<TPFApplication>
+			<!--上年投保保单号 -->
+			<LastPolicyNo> 2101000010512000174</LastPolicyNo>
+			<!--起保日期 -->
+			<EffectiveDate>20120525</EffectiveDate>
+			<!--终保日期 -->
+			<ExpireDate>20130524</ExpireDate>
+		</TPFApplication>
+		<CoverageList>
+			<Coverage>
+				<!--险种代码 -->
+				<CoverageCode> CBD </CoverageCode>
+				<!--保额/限额 -->
+				<InsuredAmount>37800</InsuredAmount>
+				<!--全损保额 -->
+				<AllAmount>37800</AllAmount>
+				<!--附加信息 -->
+				<Subsidiary></Subsidiary>
+				<!--车身划痕损失免赔率 -->
+				<DeductionRate></DeductionRate>
+				<!--指定专修厂特约条款费率 -->
+				<AriExpense></AriExpense>
+			</Coverage>
+			<Coverage>
+				<!--险种代码 -->
+				<CoverageCode> TPF </CoverageCode>
+				<!--保额/限额 -->
+				<InsuredAmount>950</InsuredAmount>
+				<!--全损保额 -->
+				<AllAmount></AllAmount>
+				<!--附加信息 -->
+				<Subsidiary>
+				</Subsidiary>
+				<!--车身划痕损失免赔率 -->
+				<DeductionRate></DeductionRate>
+				<!--指定专修厂特约条款费率 -->
+				<AriExpense></AriExpense>
+			</Coverage>
+		</CoverageList>
+
+		<VehicleTax>
+			<TaxConditionCode>P</TaxConditionCode>
+			<StartDate>19700101</StartDate>
+			<EndDate>19700101</EndDate>
+			<PersonCert>jfurfim5485</PersonCert>
+			<DeductionDueCode>O</DeductionDueCode>
+			<DeductionDueType>A</DeductionDueType>
+			<CertDepartmentName />
+			<CertificateDate>19700101</CertificateDate>
+			<SteerCardVehicleType>700</SteerCardVehicleType>
+		</VehicleTax>
+	</Body>
+</Packet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class catalog="insurance" name="com.insurance.model.Version"
+		table="version">
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+		<property generated="never" lazy="false" name="createDate"
+			type="java.lang.String">
+			<column length="64" name="createDate">
+			</column>
+		</property>
+		<property generated="never" lazy="false" name="versioninfo"
+			type="java.lang.String">
+			<column length="16" name="credit">
+			</column>
+		</property>
+		<property generated="never" lazy="false" name="versioncode"
+			type="java.lang.String">
+			<column length="255" name="depositType">
+			</column>
+		</property>
+		
+	</class>
+</hibernate-mapping>

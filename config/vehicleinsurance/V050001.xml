@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType> V050</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<!--投保查询流水号 -->
+			<TpApplyQueryNo>1234567</TpApplyQueryNo>
+			<!--校验码；半角数字和字母，不区分大小写 -->
+			<CheckCode></CheckCode>
+			<!--问题答案 -->
+			<Answer>A</Answer>
+		</BasePart>
+	</Body>
+</Packet>

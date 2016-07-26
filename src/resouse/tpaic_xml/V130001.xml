@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V130</RequestType>
+		<User>ejiaShTest</User>
+		<Password>123456</Password>
+	</Head>
+</Packet>

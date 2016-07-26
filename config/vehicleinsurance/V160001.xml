@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V160</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<Vehicle>
+			<!--投保申请号 -->
+			<PurchasePrice>1000</PurchasePrice>
+			<FirstRegisterDate>20130101</FirstRegisterDate>
+			<VehicleSeats>3</VehicleSeats>
+			<VehicleType>1</VehicleType>
+			<UsageAttributeCode>000</UsageAttributeCode>
+		</Vehicle>
+		<BizApplication>
+			<EffectiveDate>20140201</EffectiveDate>
+		</BizApplication>
+	</Body>
+</Packet>

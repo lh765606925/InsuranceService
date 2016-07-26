@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType> V050</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<BasePart>
+            <ApplicationFormNo></ApplicationFormNo>
+			<TpCalulateNo>TPCALC20120525000000001</TpCalulateNo>
+			<Remark/>
+			<EmergencyCode>1</EmergencyCode>
+			<ReportDescription/>
+			<DisputedSettleMode>0</DisputedSettleMode>
+            <ImmediateEffect>1</ImmediateEffect>
+          <ImdEffectDate>5</ImdEffectDate>
+  			<BizImmediateEffect>1</BizImmediateEffect>
+          <BizImdEffectDate>6</BizImdEffectDate>
+		</BasePart>
+		<Vehicle>
+			<TheftProof >5</TheftProof >
+			<PartInfo>4</PartInfo>
+			<RefitDesc/>
+			<CheckVehicleFlag>2</CheckVehicleFlag>
+			<UploadCheckVehicleInfo>1</UploadCheckVehicleInfo>
+		</Vehicle>
+		<BizApplication>
+			<LastYearPolicyNo>2101000010411000339</LastYearPolicyNo>
+			<TpBizApplyNo/>
+			<FixedSpecialPromise/>
+		</BizApplication>
+		<TPFApplication>
+			<LastYearPolicyNo>2101000010511000263</LastYearPolicyNo>
+			<TpTPFApplyNo/>
+			<FixedSpecialPromise/>
+		</TPFApplication>
+		<AttachmentList>
+			<Attachment>
+				<AttachmentNo>11234</AttachmentNo>
+				<AttachmentName>行驶证</AttachmentName>
+			</Attachment>
+			<Attachment>
+				<AttachmentNo>11235</AttachmentNo>
+				<AttachmentName>购车发票</AttachmentName>
+			</Attachment>
+		</AttachmentList>
+		<Payment>
+			<PaymentPersonCode>张三</PaymentPersonCode>
+			<PaymentMode>2</PaymentMode>
+			<BankAccountNo/>
+			<Cheques/>
+			<FlatUnits/>
+		</Payment>
+	</Body>
+</Packet>

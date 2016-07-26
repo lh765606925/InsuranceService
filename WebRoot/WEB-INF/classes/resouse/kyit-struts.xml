@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "struts-2.0.dtd">
+<struts>
+	<include file="struts-default.xml"></include>
+	<constant name="struts.objectFactory"
+		value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+
+	<constant name="struts.multipart.maxSize" value="107374182400" />
+	<constant name="struts.multipart.paeser" value="cos"></constant>
+	<!-- 系统常量定义，定义上传文件字符集编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<!-- 系统常量定义，定义上传文件零时存放路径javax.servlet.context.tempdir -->
+	<constant name="struts.multipart.saveDir" value="../temp"></constant>
+	<!-- action后缀 -->
+	<constant name="struts.action.extension" value="action" />
+
+	<package name="back" namespace="/back" extends="struts-default">
+		<!-- 管理员，webmanager -->
+		<action name="manager_*" method="{1}"
+			class="com.insurance.action.ManagerAction">
+			<result name="success">/background/main.jsp</result>
+			<result name="error">/background/login.jsp</result>
+			<result name="logout" type="redirect">/background/login.jsp</result>
+		</action>
+		<!-- 权限 -->
+		<action name="power_*" method="{1}"
+			class="com.insurance.action.PowerAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<action name="role_*" method="{1}" class="com.insurance.action.RoleAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 销售员 -->
+		<action name="salesman_*" method="{1}"
+			class="com.insurance.action.SalesmanAction">
+			<result name="success">/background/main.jsp</result>
+			<result name="show" type="redirect">salesman_showSalesman.action?page=${page}
+			</result>
+			<result name="upload" type="chain">uploads_salesman</result>
+			<result name="register" type="redirect">/salesman/registerOK.jsp?showInvate=${salesman.phone}
+			</result>
+		</action>
+
+		<!-- 财务管理 -->
+		<action name="finance_*" method="{1}"
+			class="com.insurance.action.FinanceAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 充值 -->
+		<action name="deposit_*" method="{1}"
+			class="com.insurance.action.DepositAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 文章管理 -->
+		<action name="article_*" method="{1}"
+			class="com.insurance.action.ArticleAction">
+			<result name="success">/background/main.jsp</result>
+			<result name="input">/background/main.jsp</result>
+		</action>
+		<!-- 文章栏目管理 -->
+		<action name="articlecategory_*" method="{1}"
+			class="com.insurance.action.ArticleCategoryAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 版本信息 -->
+		<action name="version_*" method="{1}"
+			class="com.insurance.action.VersionAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 产品管理 -->
+		<action name="product_*" method="{1}"
+			class="com.insurance.action.ProductAction">
+			<result name="success">/background/main.jsp</result>
+			<result name="Detail">/background/product/Detail.jsp</result>
+		</action>
+		<!-- 支付信息 -->
+		<action name="ordercharge_*" method="{1}"
+			class="com.insurance.action.OrderchargeAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 投保人 -->
+		<action name="policyholder_*" method="{1}"
+			class="com.insurance.action.PolicyHolderAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 保单信息 -->
+		<action name="policyinfo_*" method="{1}"
+			class="com.insurance.action.PolicyInfoAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 保险受益人 -->
+		<action name="policyinsured_*" method="{1}"
+			class="com.insurance.action.PolicyInsuredAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 产品详情 -->
+		<action name="productDetailinfo_*" method="{1}"
+			class="com.insurance.action.ProductDetailinfoAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 下载管理 -->
+		<action name="download_*" method="{1}"
+			class="com.insurance.action.DownloadAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 产品价格查询 -->
+		<action name="productprice_*" method="{1}"
+			class="com.insurance.action.ProductPriceAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 合作伙伴管理 -->
+		<action name="partners_*" method="{1}"
+			class="com.insurance.action.PartnersAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 佣金发放日志 -->
+		<action name="brokeragelog_*" method="{1}"
+			class="com.insurance.action.BrokerageLogAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 用户余额更新日志 -->
+		<action name="accountbalancelog_*" method="{1}"
+			class="com.insurance.action.AccountBalanceLogAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+
+		<!-- 车辆管理 -->
+		<action name="vehicle_*" method="{1}"
+			class="com.insurance.action.VehicleAction">
+			<result name="success">/background/main.jsp</result>
+		</action>
+		<!-- 上传 -->
+		<action name="upload" class="com.insurance.action.UploadAction">
+			<result name="success">/background/result.jsp</result>
+			<result name="input">/background/upload.jsp</result>
+		</action>
+		<action name="uploads_*" method="{1}"
+			class="com.insurance.action.UploadsAction">
+			<result name="success">/background/result.jsp</result>
+			<result name="input">/background/NewFile.jsp</result>
+			<!-- 通过拦截器来限制上传图片的类型和大小 -->
+
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/png,image/gif,image/jpeg</param>
+			</interceptor-ref>
+
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+
+		</action>
+
+	</package>
+
+</struts>
+    
+

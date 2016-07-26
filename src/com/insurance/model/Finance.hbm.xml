@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class catalog="insurance" name="com.insurance.model.Finance"
+		table="t_finance">
+		<id name="sid" type="java.lang.Integer">
+			<column name="sid" />
+			<generator class="identity" />
+		</id>
+		<property generated="never" lazy="false" name="userName"
+			type="java.lang.String">
+			<column length="64" name="userName" />
+		</property>
+		<property generated="never" lazy="false" name="name"
+			type="java.lang.String">
+			<column length="64" name="name" />
+		</property>
+		<property generated="never" lazy="false" name="phone"
+			type="java.lang.Long">
+			<column name="phone" />
+		</property>
+		<property generated="never" lazy="false" name="money"
+			type="java.lang.Double">
+			<column length="16" name="money" />
+		</property>
+		<property generated="never" lazy="false" name="record"
+			type="java.lang.String">
+			<column length="255" name="record" />
+		</property>
+		<property generated="never" lazy="false" name="idNum"
+			type="java.lang.String">
+			<column length="255" name="record" />
+		</property>
+		<!-- <set name="managerPowers" inverse="true" cascade="all"> <key> <column 
+			name="mId" not-null="true" /> </key> <one-to-many class="com.insurance.model.ManagerPower" 
+			/> </set> -->
+	</class>
+</hibernate-mapping>

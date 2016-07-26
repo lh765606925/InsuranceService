@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="request" version="1.0">
+	<Head>
+		<RequestType>V010</RequestType>
+		<User></User>
+		<Password></Password>
+	</Head>
+	<Body>
+		<Vehicle>
+	    	<!-- 号牌号码-->
+			<VehicleName></VehicleName>		
+			<!-- 车辆识别代号（车架号/VIN码）-->
+			<VehicleFrameNo></VehicleFrameNo>			
+			<!-- 车型编码 -->
+			<AutoModelCode></AutoModelCode>
+			<!-- 使用性质 营业/非营业 -->
+			<UsageAttributeCode></UsageAttributeCode>
+		</Vehicle>
+	</Body>
+</Packet>

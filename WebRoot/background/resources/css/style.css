@@ -1,0 +1,480 @@
+@CHARSET "UTF-8";
+
+.clear {
+	clear: both;
+}
+
+.text-input {
+	padding: 5px;
+	color: #333333;
+	font-family: Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei,
+		sans-serif;
+	font-size: 16px;
+	background: url("../images/input.png");
+	width: 284px !important;
+	height: 43px;
+	border: 0px;
+}
+
+.button {
+	font-size: 20px !important;
+	letter-spacing: 10px;
+	color: #ffffff;
+	background: url("../images/btn-login.png");
+	width: 143px !important;
+	height: 43px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.button:hover {
+	text-decoration: underline;
+}
+
+.defaultPage {
+	width: 100%;
+	height: 40%;
+	font-size: 0px;
+	color: red;
+	opacity: 1;
+}
+
+.defaultPage #p1 {
+	position: relative;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+.defaultPage #p2 {
+	position: relative;
+	text-align: left;
+}
+
+/********************************      OrderDetail Page      ********************************/
+.red {
+	color: red;
+}
+
+table#orderdetail th {
+	background-color: #94E0F9;
+}
+
+.center_order {
+	margin: auto 0;
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #E1EBF2;
+}
+
+/********************************      Login Page      ********************************/
+body#login_page {
+	margin: 0px;
+	padding: 0px;
+	font-family: Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei,
+		sans-serif;
+	background: url("../images/index_repeat.png") repeat-x scroll 0 0px;
+	overflow: auto;
+}
+
+body#main_page {
+	margin: 0px;
+	padding: 0px;
+	font-family: Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei,
+		sans-serif;
+	background: url('../images/bg-login.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: auto;
+}
+
+#login-container {
+	margin: 0 auto;
+	height: 585px;
+	width: 950px;
+	background: url('../images/bac_f2.png');
+}
+
+#login-container #login-title {
+	width: 220px;
+	height: 80px;
+	padding: 0px 0 0px 0px !important;
+}
+
+#login-container #login {
+	width: 380px;
+	height: 462px;
+	margin: -18 0 0 auto;
+	background: url('../images/login.png') no-repeat scroll 0 0;
+	float: right;
+	position: absolute;
+	right: 240px;
+	top: 122px;
+	overflow: hidden;
+}
+
+#login-container #login #manager.userName {
+	
+}
+
+#login-container #login-content {
+	margin: 0 auto;
+	width: 400px;
+	text-align: left;
+}
+
+#login-container #login-content form {
+	margin-top: 100px;
+	width: 335px;
+}
+
+#login-container #login-content form label {
+	font-weight: normal;
+	font-size: 17px;
+	float: left;
+	color: #333333;
+	width: 80px;
+	margin-top: 10px;
+}
+#login-container #login-content  #remember {
+	color: red;
+	float: left;
+	width:30px;
+	margin: 0 0 0 33px;
+}
+
+#login-container #login-content  #remember_text {
+	color: #a0a0a0;
+	float: left;
+	text-algin:center;
+	height:33px;
+	line-height: 27px;
+}
+#login-container #login-content  #error {
+	color: red;
+	float: right;
+	margin-top: -100px;
+}
+
+#login-container #login-content #welcome {
+	color: #a0a0a0;
+	float: left;
+	margin-top: 50px;
+	padding-left: 40px;
+}
+
+#login-container #login-content input {
+	width: 241px;
+	float: right;
+	border: medium none;
+	margin: 5px 0 21px 0;
+	height: 32px;
+}
+
+#login-container #login-content  .input_out {
+	background: url('../images/login_btn.png');
+	width: 294px;
+	float: right;
+	border: medium none;
+	margin: 16px 0 21px 0;
+	color: #ffffff;
+}
+
+#login-container #login-content  .input_move {
+	background: url('../images/login_btn_onclick.png');
+	width: 294px;
+	float: right;
+	margin: 16px 0 21px 0;
+	color: #ffffff;
+}
+
+/********************************      Head Page      ********************************/
+.head {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	height: 150px;
+	text-align: left;
+}
+
+.head-top {
+	width: 100%;
+}
+
+.h_logo {
+	width: 124px;
+	height: 56px;
+	float: left;
+	margin: 10px 20px;
+}
+
+.h_title {
+	display:inline-block;
+	font-weight: bolder;
+	font-size: 28px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	padding-top: 30px;
+	margin-left: 10px;
+}
+
+.h_right {
+    float: right;
+    font-size:16px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.currentTime {
+    padding-left: 20px;
+}
+
+.head-down {
+	margin-top: -70px;
+	float:left;
+	width: 100%;
+	height: 91px;
+	background: url("../images/dh.png");
+}
+
+.h_nav {
+	float: left;
+    margin-top:-10px;
+	text-align: center;
+}
+
+.h_nav_fenge {
+    float: left;
+    margin-top: 10px;
+}
+
+.h_nav_a {
+	width: 139px;
+	height: 91px;
+	display: block;
+	text-decoration: none;
+}
+
+.h_nav .h_nav_a span {
+	color: #FFFFFF;
+	font-size: 14px;
+	display: block;
+	padding-top: 70px;
+}
+
+.h_nav #a1 {
+	background: url("../images/a1.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a1:hover {
+	text-decoration: none;
+	background: url("../images/a1_.png") no-repeat;
+	background-position: center;
+}
+.h_nav #a1:visited {
+	background: url("../images/a1_.png") no-repeat;
+	background-position: center;
+} 
+.h_nav #a2 {
+	background: url("../images/a2.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a2:hover {
+	text-decoration: none;
+	background: url("../images/a2_.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a3 {
+	background: url("../images/a3.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a3:hover {
+	text-decoration: none;
+	background: url("../images/a3_.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a4 {
+	background: url("../images/a4.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a4:hover {
+	text-decoration: none;
+	background: url("../images/a4_.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a5 {
+	background: url("../images/a5.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a5:hover {
+	text-decoration: none;
+	background: url("../images/a5_.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a6 {
+	background: url("../images/a6.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a6:hover {
+	text-decoration: none;
+	background: url("../images/a6_.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a7 {
+	background: url("../images/a7.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a7:hover {
+	text-decoration: none;
+	background: url("../images/a7_.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a8 {
+	background-position: center;
+	background: url("../images/a8.png") no-repeat;
+}
+
+.h_nav #a8:hover {
+	text-decoration: none;
+	background: url("../images/a8_.png") no-repeat;
+	background-position: center;
+}
+.h_nav #a9 {
+	background: url("../images/logout.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a9:hover {
+	text-decoration: none;
+	background: url("../images/logout_.png") no-repeat;
+	background-position: center;
+}
+
+
+.h_nav #a10 {
+	background: url("../images/a10.png") no-repeat;
+	background-position: center;
+}
+
+.h_nav #a10:hover {
+	text-decoration: none;
+	background: url("../images/a10_.png") no-repeat;
+	background-position: center;
+}
+/********************************      Left Page      ********************************/
+
+
+.left_top {
+	height: 50px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.left_top_{
+	padding:0 5px;
+}
+
+.nav_name {
+    color: #FFFFFF;
+    font-size:18px;
+    
+}
+
+.left_down {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.nav_son_name {
+	height:40px;
+	display:block;
+	color:#FFFFFF;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.nav_son_name span {
+	display:inline-block;
+    letter-spacing: 5px;
+    
+    
+}
+
+.nav_son #son1:hover {
+    background:url("../images/nav_son.png") no-repeat; 
+}
+
+.nav_son #son2:hover {
+    background:url("../images/nav_son.png") no-repeat; 
+}
+
+.nav_son #son3:hover {
+    background:url("../images/nav_son.png") no-repeat; 
+}
+
+.nav_son #son4:hover {
+    background:url("../images/nav_son.png") no-repeat; 
+}
+
+.nav_son #son5:hover {
+    background:url("../images/nav_son.png") no-repeat; 
+}
+
+/********************************      Right Page      ********************************/
+.center {
+   margin:auto 0;
+   float:left;
+   width: 100%;
+   height:560px;
+   background-color: #E1EBF2;
+}
+
+/********************************      Main Page      ********************************/
+#center {
+    width: 100%;
+    
+}
+
+#left {
+    width: 15%;
+    float: left;
+}
+#right {
+    width: 85%;
+    height:300px;
+    float: left;
+}
+.main_table {
+    padding: 0px 10px;
+
+
+}
+.data_content{
+	width:98%;
+	height:94%;
+	margin:10px 0 0 10px;
+	padding:1px;
+    background-color: #FFF;
+}
+.data_content_top{
+	margin-top: 15px;
+	float:left;
+	margin-left:20px;
+	padding-bottom: 10px;
+}

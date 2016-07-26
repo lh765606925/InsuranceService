@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type='REQUEST' version='1.0'>
+	<Head>
+		<RequestType>V070</RequestType>
+		<User>gzfanhuatest</User>
+		<Password>123456</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<TemporaryNo>814279261718</TemporaryNo>
+		</BasePart>
+		<Vehicle>
+			<VehicleLicenceCode></VehicleLicenceCode>
+			<LicenseTypeCode />
+			<VehicleType>2</VehicleType>
+			<UsageAttributeCode>2</UsageAttributeCode>
+			<OwnershipAttributeCode>1</OwnershipAttributeCode>
+			<FirstRegisterDate>20120515</FirstRegisterDate>
+			<VehicleFrameNo>L2834789374892374</VehicleFrameNo>
+			<EngineNo>HUS92U50</EngineNo>
+			<VehicleStyle>K33</VehicleStyle>
+			<AutoModelCode>DZAAKD0023</AutoModelCode>
+			<SpecialCarFlag />
+			<VehicleBrand>奔驰拖拉机</VehicleBrand>
+			<TransferDate>20110921</TransferDate>
+			<EcdemicVehicleFlag>0</EcdemicVehicleFlag>
+			<LoanVehicleFlag>1</LoanVehicleFlag>
+			<isMotorcade>0</isMotorcade>
+			<FleetNo>77777</FleetNo>
+			<VehicleSeats>2</VehicleSeats>
+			<ExhaustCapability>1.39</ExhaustCapability>
+			<Weight>30.0</Weight>
+			<VehicleTonnages>3.0</VehicleTonnages>
+			<PurchasePrice>2000</PurchasePrice>
+			<Power />
+			<FuelType>0</FuelType>
+			<AutoModelChnName>波罗SVW7144HLi</AutoModelChnName>
+			<Owner>黎明</Owner>
+			<VehicleStyleDesc>轿车</VehicleStyleDesc>
+			<TheftProof>3</TheftProof>
+			<PartInfo>1</PartInfo>
+		</Vehicle>
+		<Applicant personType='1'>
+			<Personnel>
+				<PersonnelName>黎明1</PersonnelName>
+				<CertificateType>9</CertificateType>
+				<CertificateNo>220102198701010251</CertificateNo>
+				<MobileTelephone>15914317653</MobileTelephone>
+				<HomeAreaCode />
+				<HomeTelephone />
+				<OfficeAreaCode />
+				<OfficeTelephone />
+				<Postcode>12</Postcode>
+				<Email>aa@bb.cc</Email>
+				<DriverLicenseExpirationDate />
+				<DrivingExpirationDate />
+				<Address>中国广东广州市越秀区水荫路</Address>
+				<Gender>M</Gender>
+				<Birthday>20111212</Birthday>
+			</Personnel>
+		</Applicant>
+		<Insured personType='1'>
+			<Personnel>
+				<PersonnelName>黎明2</PersonnelName>
+				<CertificateType>9</CertificateType>
+				<CertificateNo>220102198701010251</CertificateNo>
+				<MobileTelephone>15914317653</MobileTelephone>
+				<HomeAreaCode />
+				<HomeTelephone />
+				<OfficeAreaCode />
+				<OfficeTelephone />
+				<Postcode>12</Postcode>
+				<Email>aa@bb.cc</Email>
+				<DriverLicenseExpirationDate />
+				<DrivingExpirationDate />
+				<Address>中国广东广州市越秀区水荫路</Address>
+				<Gender>M</Gender>
+				<Birthday>20111212</Birthday>
+			</Personnel>
+		</Insured>
+		<VehicleOwner personType='1'>
+			<Personnel>
+				<PersonnelName>黎明3</PersonnelName>
+				<CertificateType>9</CertificateType>
+				<CertificateNo>220102198701010251</CertificateNo>
+				<MobileTelephone>15914317653</MobileTelephone>
+				<HomeAreaCode />
+				<HomeTelephone />
+				<OfficeAreaCode />
+				<OfficeTelephone />
+				<Postcode>12</Postcode>
+				<Email>aa@bb.cc</Email>
+				<DriverLicenseExpirationDate />
+				<DrivingExpirationDate />
+				<Address>中国广东广州市越秀区水荫路</Address>
+				<Gender>M</Gender>
+				<Birthday>20111212</Birthday>
+			</Personnel>
+		</VehicleOwner>
+		<DriverList>
+			<Driver>
+				<PersonnelName>任友东</PersonnelName>
+				<Birthday>19871203</Birthday>
+				<DriveVehicleType>D</DriveVehicleType>
+				<DriveLicenseNo>441781198712030253</DriveLicenseNo>
+				<FirstIssueDate>20110622</FirstIssueDate>
+				<IsMajorDriver>1</IsMajorDriver>
+				<SexCode>M</SexCode>
+			</Driver>
+		</DriverList>
+		<BizApplication>
+			<EffectiveDate>20120914</EffectiveDate>
+			<ExpireDate>20130914</ExpireDate>
+		</BizApplication>
+		<TPFApplication>
+			<EffectiveDate>20120914</EffectiveDate>
+			<ExpireDate>20130914</ExpireDate>
+		</TPFApplication>
+		<CoverageList>
+			<Coverage>
+				<CoverageCode>OD</CoverageCode>
+				<InsuredAmount>1000</InsuredAmount>
+				<AllAmount>1</AllAmount>
+				<Subsidiary />
+				<DeductionRate />
+				<AriExpense />
+			</Coverage>
+
+		</CoverageList>
+		<VehicleTax>
+			<TaxConditionCode>P</TaxConditionCode>
+			<StartDate>19700101</StartDate>
+			<EndDate>19700101</EndDate>
+			<PersonCert>jfurfim5485</PersonCert>
+			<DeductionDueCode>O</DeductionDueCode>
+			<DeductionDueType>A</DeductionDueType>
+			<Deduction />
+			<FreeNo />
+			<CertDepartmentName />
+			<CertificateDate>19700101</CertificateDate>
+			<SteerCardVehicleType />
+			<LastYearEndDate></LastYearEndDate>
+			<PayNo>1</PayNo>
+			<PayFreeState />
+		</VehicleTax>
+		<Payment>
+			<PaymentPersonCode>黎明</PaymentPersonCode>
+			<PaymentMode>1</PaymentMode>
+			<BankAccount>21646454848</BankAccount>
+			<Cheques />
+			<FlatUnits />
+		</Payment>
+	</Body>
+</Packet> 

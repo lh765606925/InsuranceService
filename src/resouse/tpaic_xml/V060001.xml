@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType> V060</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<ApplicationFormNo>123</ApplicationFormNo>
+			<TpBizApplyNo>1000108000005513163</TpBizApplyNo>
+			<TpTPFApplyNo>1000105000005513157</TpTPFApplyNo>
+		</BasePart>
+	</Body>
+</Packet>

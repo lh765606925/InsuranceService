@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<ResquestType> V030</ResquestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+	<Body>
+		<BasePart>
+			<!--投保查询流水号 -->
+			<TpApplyQueryNo>89456123</TpApplyQueryNo>
+			<RenewalFlag>0</RenewalFlag>
+			<!--校验码图片转换后的串 -->
+			<CheckCode></CheckCode>
+			<!--问题描述(问题,参考答案) -->
+			<Question></Question>
+		</BasePart>
+		<Vehicle>
+			<VehicleLicenceCode>沪A11111</VehicleLicenceCode>
+			<VehicleFrameNo>L1111111111111111</VehicleFrameNo>
+			<EngineNo>11 </EngineNo>
+			<VehicleType>1</VehicleType>
+			<Owner>张三</Owner>
+		</Vehicle>
+		<VehicleModelList>
+			<VehicleModel>
+				<!--制造厂商 -->
+				<Maker>北京奔驰</Maker>
+				<!--车辆品牌 -->
+				<VehicleBrand>奔驰</VehicleBrand>
+				<!--车型名称 -->
+				<AutoModelChnName></AutoModelChnName>
+				<!--车型编码(对应车型查询) -->
+				<AutoModelCode>aa3f1c96c057ffc800000000159d5a95</AutoModelCode>
+				<!--上市年份 -->
+				<FirstSaleDate>201102</FirstSaleDate>
+				<!--座位数 -->
+				<VehicleSeats>5</VehicleSeats>
+				<!--排气量 -->
+				<ExhaustCapability>1.256</ExhaustCapability>
+				<!--整备质量 -->
+				<Weight>14.435</Weight>
+				<!--吨位 -->
+				<VehicleTonnages>15.47</VehicleTonnages>
+				<PurchasePrice>100000</PurchasePrice>
+				<PurchasePriceTax>100000</PurchasePriceTax>
+				<KindredPrice>100000</KindredPrice>
+				<KindredPriceTax>100000</KindredPriceTax>
+				<TransmissionType>手自一体</TransmissionType>
+				<VehSeries>奔驰C级</VehSeries>
+				<TheftProof>1</TheftProof>
+				<ImportFlag>1</ImportFlag>
+				<AirbagCount>5</AirbagCount>
+				<Power>20</Power>
+				<Remark></Remark>
+			</VehicleModel>
+		</VehicleModelList>
+
+		<BizApplication>
+			<!--基准保费 -->
+			<TotalStandardPremium>8944.00</TotalStandardPremium>
+			<!--复核保费 -->
+			<TotalActualPremium>8228.48</TotalActualPremium>
+			<!--印花税 -->
+			<StampTax></StampTax>
+			<!--车损系数 -->
+			<TotalRatioOD>0.92</TotalRatioOD>
+			<!--三者系数 -->
+			<TotalRatioTP>1.0</TotalRatioTP>
+			<!--盗抢险系数 -->
+			<TotalRatioTHEFT>1.0</TotalRatioTHEFT>
+			<!--其他系数 -->
+			<TotalRatioOTHER>1.0</TotalRatioOTHER>
+			<!--不可改特别约定 -->
+			<FixedSpecialPromise></FixedSpecialPromise>
+			<!--可改特别约定 -->
+			<AlterableSpecialPromise></AlterableSpecialPromise>
+		</BizApplication>
+		<PeccList>
+			<PeccData>
+				<!--违法编号 -->
+				<PeccancyId>
+				</PeccancyId>
+				<!--决定书编号 -->
+				<DecisionId></DecisionId>
+				<!--决定书类型 -->
+				<DecisionType></DecisionType>
+				<!--违法时间 -->
+				<PeccancyTime></PeccancyTime>
+				<!--违法处理时间 -->
+				<ManageTime></ManageTime>
+				<!--违法地点 -->
+				<PeccancyPlace></PeccancyPlace>
+				<!--违法行为代码 -->
+				<PeccancyCode></PeccancyCode>
+				<!--违法驾驶员驾驶证号 -->
+				<DrivingLicence></DrivingLicence>
+				<!--处理状态(是否已处理) -->
+				<ProcessingStatus></ProcessingStatus>
+			</PeccData>
+		</PeccList>
+		<ClaimList>
+			<ClaimData>
+				<!--保险公司 -->
+				<InsuranceCompany>
+				</InsuranceCompany>
+				<!--立案号 -->
+				<RegisreationNo></RegisreationNo>
+				<!--赔案号 -->
+				<ClaimNumber></ClaimNumber>
+				<!--出险时间 -->
+				<AccidentTime></AccidentTime>
+				<!--结案时间 -->
+				<FinishCaseTime></FinishCaseTime>
+				<!--是否发生有责任交通死亡事故 -->
+				<AccidentDeath></AccidentDeath>
+				<!--赔款总金额 -->
+				<ClaimAmount>2000</ClaimAmount>
+			</ClaimData>
+		</ClaimList>
+
+		<RiskItem>
+			<!--违法调整系数 -->
+			<PeccancyAdjustRatio>1.00</PeccancyAdjustRatio>
+			<!--理赔调整系数 -->
+			<ClaimAdjustRatio>1.00</ClaimAdjustRatio>
+			<!--违法浮动原因代码 -->
+			<PeccancyAdjustReason></PeccancyAdjustReason>
+			<!--理赔浮动原因代码 -->
+			<ClaimAdjustReason></ClaimAdjustReason>
+		</RiskItem>
+		<ReInsureList>
+			<ReInsureItem>
+				<PolicyNo>20010030021</PolicyNo>
+				<InsurerCode> TPIC </InsurerCode>
+				<LicenseTypeCode>1</LicenseTypeCode>
+				<VehicleLicenceCode>沪A11111</VehicleLicenceCode>
+				<VehicleFrameNo>L1111111111111111</VehicleFrameNo>
+				<EngineNo>11111</EngineNo>
+				<LicensePlateColorCode>01</LicensePlateColorCode>
+				<EffectiveDate>20120101</EffectiveDate>
+				<ExpireDate>20121231</ExpireDate>
+				<BillDate>20112101</BillDate>
+			</ReInsureItem>
+
+			<ReInsureItem>
+				<PolicyNo>20010030021</PolicyNo>
+				<InsuredName>张三</InsuredName>
+				<VehicleLicenseNo>沪A11111</VehicleLicenseNo>
+				<EngineNo>11111</EngineNo>
+				<InsuranceBeginTime>20120101</InsuranceBeginTime>
+				<VehicleFrameNo>L1111111111111111</VehicleFrameNo>
+			</ReInsureItem>
+		</ReInsureList>
+		<CoverageList>
+			<Coverage>
+				<!--险种代码 -->
+				<CoverageCode> CBD </CoverageCode>
+				<!--保额/限额 -->
+				<InsuredAmount>37800</InsuredAmount>
+				<!--全损保额 -->
+				<AllAmount>37800</AllAmount>
+				<!--附加信息 -->
+				<Subsidiary></Subsidiary>
+				<!--车身划痕损失免赔率 -->
+				<DeductionRate></DeductionRate>
+				<!--指定专修厂特约条款费率 -->
+				<AriExpense></AriExpense>
+			</Coverage>
+			<Coverage>
+				<!--险种代码 -->
+				<CoverageCode> TPF </CoverageCode>
+				<!--保额/限额 -->
+				<InsuredAmount>950</InsuredAmount>
+				<!--全损保额 -->
+				<AllAmount></AllAmount>
+				<!--附加信息 -->
+				<Subsidiary>
+				</Subsidiary>
+				<!--车身划痕损失免赔率 -->
+				<DeductionRate></DeductionRate>
+				<!--指定专修厂特约条款费率 -->
+				<AriExpense></AriExpense>
+			</Coverage>
+		</CoverageList>
+
+
+		<OwnerMessage>
+			<!--车主提示信息类型 -->
+			<OwnerMessageType>01</OwnerMessageType>
+		</OwnerMessage>
+
+		<RenewList>
+			<RenewItem>
+				<PolicyNo>20010030021</PolicyNo>
+				<InsuredName>张三</InsuredName>
+				<VehicleLicenseNo>沪A11111</VehicleLicenseNo>
+				<EngineNo>11111</EngineNo>
+				<InsuranceBeginTime>20120101</InsuranceBeginTime>
+				<VehicleFrameNo>L1111111111111111</VehicleFrameNo>
+			</RenewItem>
+			<RenewItem>
+				<PolicyNo>20010030021</PolicyNo>
+				<InsuredName>张三</InsuredName>
+				<VehicleLicenseNo>沪A11111</VehicleLicenseNo>
+				<EngineNo>11111</EngineNo>
+				<InsuranceBeginTime>20120101</InsuranceBeginTime>
+				<VehicleFrameNo>L1111111111111111</VehicleFrameNo>
+			</RenewItem>
+		</RenewList>
+
+	</Body>
+</Packet>

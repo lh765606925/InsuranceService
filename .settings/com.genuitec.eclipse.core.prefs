@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/jquery-ui-bootstrap,WebRoot/jquery-easyui-1.3.3/jquery.min.js,WebRoot/bootstrap/js/jstree.min.js,WebRoot/JqueryPlus/js,src/resouse/kyit-struts.xml,WebRoot/bootstrap
+validator.Unchecked=

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V190</RequestType>
+		<User>test_user</User>
+		<Password>123</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<CertificationNo>123456789</CertificationNo>
+			<PolicyNo>123421000010552525</PolicyNo>
+			<ApplyPolicyNo>2110121454515</ApplyPolicyNo>
+			<PrintType>1</PrintType>
+			<PrintNo>TPAIC01</PrintNo>
+		</BasePart>
+	</Body>
+</Packet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<ResquestType>V180</ResquestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+<Body>
+		<BasePart>
+			<PolicyNo>1000108000005513163</PolicyNo>
+		</BasePart>
+	</Body>	
+</Packet>

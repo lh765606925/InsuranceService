@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<ResquestType>V150</ResquestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+	<Body>
+		<BasePart>
+			<ApplicationFormNo>123456789</ApplicationFormNo>
+			<TpBizApplyNo>1000104000005505291</TpBizApplyNo>
+			<TpTPFApplyNo>1000105000005563364</TpTPFApplyNo>
+		</BasePart>
+		<BizApplication>
+			<PolicyStatus>03</PolicyStatus>
+			<PolicyNo>21030100104120000281</PolicyNo>
+		</BizApplication>
+		<TPFApplication>
+			<PolicyStatus>02</PolicyStatus>
+			<PolicyNo></PolicyNo>
+		</TPFApplication>
+	</Body>
+</Packet>

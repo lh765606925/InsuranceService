@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<eaiAhsXml>
+<Header>
+       <TRAN_CODE>100084</TRAN_CODE>
+       <BANK_CODE>7966</BANK_CODE>
+       <BRNO>79660000</BRNO>
+       <TELLERNO></TELLERNO>
+       <BK_ACCT_DATE>20140825</BK_ACCT_DATE>
+       <BK_ACCT_TIME>16:56:00</BK_ACCT_TIME>
+       <BK_SERIAL>45649BK9SERIAL3128622</BK_SERIAL>
+       <BK_TRAN_CHNL>WEB</BK_TRAN_CHNL>
+       <REGION_CODE>000000</REGION_CODE>
+       <PTP_CODE></PTP_CODE>
+</Header>
+<Request>
+        <policyInfo>
+                <policyNo>10520001900120103675</policyNo>
+        </policyInfo>
+</Request>
+
+</eaiAhsXml>

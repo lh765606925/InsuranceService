@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<ResquestType> V010</ResquestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+	<Body>
+		<VehicleModelList>
+			<VehicleModel>
+				<!-- 制造厂商 -->
+				<Maker>北京奔驰</Maker>
+				<!-- 车辆品牌 -->
+				<VehicleBrand>奔驰</VehicleBrand>
+				<!-- 车型名称 -->
+				<AutoModelChnName></AutoModelChnName>
+				<!-- 车型编码(对应车型查询) -->
+				<AutoModelCode>aa3f1c96c057ffc800000000159d5a95</AutoModelCode>
+				<!-- 上市年份 -->
+				<FirstSaleDate>201102</FirstSaleDate>
+				<!-- 座位数 -->
+				<VehicleSeats>5</VehicleSeats>
+				<!-- 排气量 -->
+				<ExhaustCapability>1.256</ExhaustCapability>
+				<!-- 整备质量 -->
+				<Weight>14.435</Weight>
+				<!-- 吨位 -->
+				<VehicleTonnages>15.47</VehicleTonnages>
+				<PurchasePrice>100000</PurchasePrice>
+				<PurchasePriceTax>100000</PurchasePriceTax>
+				<KindredPrice>100000</KindredPrice>
+				<KindredPriceTax>100000</KindredPriceTax>
+				<TransmissionType>手自一体</TransmissionType>
+				<VehSeries>奔驰C级</VehSeries>
+				<TheftProof>1</TheftProof>
+				<ImportFlag>1</ImportFlag>
+				<AirbagCount>5</AirbagCount>
+				<Power>20</Power>
+				<Remark></Remark>
+			</VehicleModel>
+		</VehicleModelList>
+	</Body>
+</Packet>

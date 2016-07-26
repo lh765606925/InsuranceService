@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.insurance.model">
+	<class name="ClientModel" table="clientmodel" lazy="true">
+
+		<id name="userId" column="userid" length="64" type="java.lang.String">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="userName" column="username" length="64"
+			type="java.lang.String">
+		</property>
+
+		<property name="userPass" column="userpass" length="64"
+			type="java.lang.String">
+		</property>
+
+		<property name="userRealName" column="userrealname" length="64"
+			type="java.lang.String">
+		</property>
+		
+		<property name="userMail" column="usermail" length="64"
+			type="java.lang.String">
+		</property>
+		
+		<property name="userPhone" column="userphone" length="64"
+			type="java.lang.String">
+		</property>
+		
+		<property name="userGender" column="usergender" length="64"
+			type="java.lang.String">
+		</property>
+		
+		<property name="userIdentity" column="useridentity" length="64"
+			type="java.lang.String">
+		</property>
+		<property name="userIdentityPicture" column="useridentitypicture" length="200"
+			type="java.lang.String">
+		</property>
+		<property name="userHeadPortrait" column="userheadportrait" length="200"
+			type="java.lang.String">
+		</property>
+		<property name="userAddress" column="useraddress" length="100"
+			type="java.lang.String">
+		</property>
+		<property name="userRegistrationTime" column="userregistrationtime" length="64" unique="true"
+			type="java.lang.String">
+		</property>
+		
+		<property name="userLevel" column="userlevel"
+			type="java.lang.Integer">
+		</property>
+		
+		<property name="userState" column="userstate" length="64"
+			type="java.lang.String">
+		</property>
+		
+	</class>
+</hibernate-mapping>

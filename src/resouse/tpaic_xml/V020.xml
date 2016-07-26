@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V020</RequestType>
+		<User></User>
+		<Password></Password>
+	</Head>
+	<Body>
+		<Vehicle>
+			<!--号牌号码-->
+			<VehicleLicenceCode >沪AS1234</VehicleLicenceCode >
+			<!--号牌种类代码-->
+			<LicenseTypeCode >2</LicenseTypeCode >	
+             <!--车辆型号-->
+			<AutoModelChnName></AutoModelChnName >
+			<!--车型编码(对应车型查询)-->
+			<AutoModelCode></AutoModelCode>
+			<!--车辆初始登记日期。格式：精确到天-->
+			<FirstRegisterDate>20120501</FirstRegisterDate >
+			<!--车辆识别代号（车架号/VIN码）-->
+			<VehicleFrameNo>LV3LD830473894821</VehicleFrameNo >
+			<!--发动机号-->
+			<EngineNo>HUS92U49</EngineNo>
+             <!--车辆品牌-->
+			<VehicleBrand>奔驰</VehicleBrand >
+			<!--外地车标志-->
+			<EcdemicVehicleFlag>0</EcdemicVehicleFlag>
+			<!--排气量-->
+			<ExhaustCapability>1.256</ExhaustCapability>
+			<!--行驶证整备质量-->
+			<VehicleTonnages>15.47</VehicleTonnages>	
+			<!--整备质量最小值-->
+			<Weight>14.435</Weight>
+             <!--交管车辆种类-->
+             <VehicleStyle></VehicleStyle>
+			<!--核定载人数-->
+			<VehicleSeats>5</VehicleSeats>
+             <!--制造厂家-->
+             <Maker></Maker>
+             <!--年款-->
+             <FirstSaleDate></FirstSaleDate>
+             <!--车辆类型描述-->
+			<VehicleStyleDesc></VehicleStyleDesc>
+		</Vehicle>
+	</Body>
+</Packet>

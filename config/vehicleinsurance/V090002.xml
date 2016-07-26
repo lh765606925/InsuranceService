@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<Packet type="RESPONSE" version="1.0">
+	<Head>
+		<RequestType>V090</RequestType>
+		<ResponseCode>1</ResponseCode>
+		<ErrorCode>0000</ErrorCode>
+		<ErrorMessage>成功</ErrorMessage>
+	</Head>
+	<Body>
+		<RenewList>
+			<RenewItem>
+				<PolicyNo>2108010010513000173</PolicyNo>
+				<InsuredName>测试</InsuredName>
+				<VehicleLicenseNo>苏BIG9JS</VehicleLicenseNo>
+				<EngineNo>R9WAT4HQ2UP39UNY1</EngineNo>
+				<InsuranceBeginTime>2013-06-28 00:00:00</InsuranceBeginTime>
+				<InsuranceEndTime>2014-06-27 23:59:59</InsuranceEndTime>
+				<VehicleFrameNo>1UJLFLET3233UAXS3</VehicleFrameNo>
+				<TotalPremium>950</TotalPremium>
+				<RenewStatus>1</RenewStatus>
+				<CancelMark />
+				<InsuredCertificateNo>370102195708081028</InsuredCertificateNo>
+				<Owner>测试</Owner>
+				<OwnerCertificateNo>350402198501010006</OwnerCertificateNo>
+				<AutoModelChnName>宝马BMW 630i</AutoModelChnName>
+				<PolicyType>02</PolicyType>
+				<RelationPolicyNo>2108010010413000144</RelationPolicyNo>
+			</RenewItem>
+			<RenewItem>
+				<PolicyNo>2108010010413000144</PolicyNo>
+				<InsuredName>测试</InsuredName>
+				<VehicleLicenseNo>苏BIG9JS</VehicleLicenseNo>
+				<EngineNo>R9WAT4HQ2UP39UNY1</EngineNo>
+				<InsuranceBeginTime>2013-06-28 00:00:00</InsuranceBeginTime>
+				<InsuranceEndTime>2014-06-27 23:59:59</InsuranceEndTime>
+				<VehicleFrameNo>1UJLFLET3233UAXS3</VehicleFrameNo>
+				<TotalPremium>7902.38</TotalPremium>
+				<RenewStatus>1</RenewStatus>
+				<CancelMark />
+				<InsuredCertificateNo>350402198501010006</InsuredCertificateNo>
+				<Owner>测试</Owner>
+				<OwnerCertificateNo>350402198501010006</OwnerCertificateNo>
+				<AutoModelChnName>宝马BMW 630i</AutoModelChnName>
+				<PolicyType>01</PolicyType>
+				<RelationPolicyNo>2108010010513000173</RelationPolicyNo>
+			</RenewItem>
+		</RenewList>
+	</Body>
+</Packet>

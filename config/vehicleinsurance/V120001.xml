@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<Packet type="REQUEST" version="1.0">
+	<Head>
+		<RequestType>V120</RequestType>
+		<User>zj_tianyi_dl</User>
+		<Password>666666</Password>
+	</Head>
+	<Body>
+		<BasePart>
+			<PolicyNo>2112000010812000024</PolicyNo><!-- 保单号 -->
+			<ClaimNo>5112000010812000217</ClaimNo><!-- 赔案号（如果没有输入赔案号，则查询保单下所有赔案） -->
+			<CertificateNo>341281199008188685</CertificateNo><!-- 身份证号 -->
+		</BasePart>
+	</Body>
+</Packet>
