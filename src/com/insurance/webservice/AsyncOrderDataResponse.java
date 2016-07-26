@@ -8,20 +8,17 @@
 package com.insurance.webservice;
 
 /**
- * AsyncOrderDataResponse bean class
+ * AsyncOrderDataResponse bean class111
  */
 @SuppressWarnings({ "unchecked", "unused" })
-public class AsyncOrderDataResponse implements
-		org.apache.axis2.databinding.ADBBean {
+public class AsyncOrderDataResponse implements org.apache.axis2.databinding.ADBBean {
 
 	/**
 				 * 
 				 */
 	private static final long serialVersionUID = 1L;
 
-	public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
-			"http://webservice.damsfront.foresealife.com",
-			"asyncOrderDataResponse", "ns1");
+	public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName("http://webservice.damsfront.foresealife.com", "asyncOrderDataResponse", "ns1");
 
 	/**
 	 * field for _return
@@ -68,50 +65,33 @@ public class AsyncOrderDataResponse implements
 	 * @param factory
 	 * @return org.apache.axiom.om.OMElement
 	 */
-	public org.apache.axiom.om.OMElement getOMElement(
-			final javax.xml.namespace.QName parentQName,
-			final org.apache.axiom.om.OMFactory factory)
-			throws org.apache.axis2.databinding.ADBException {
+	public org.apache.axiom.om.OMElement getOMElement(final javax.xml.namespace.QName parentQName, final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException {
 
-		org.apache.axiom.om.OMDataSource dataSource = new org.apache.axis2.databinding.ADBDataSource(
-				this, MY_QNAME);
+		org.apache.axiom.om.OMDataSource dataSource = new org.apache.axis2.databinding.ADBDataSource(this, MY_QNAME);
 		return factory.createOMElement(dataSource, MY_QNAME);
 
 	}
 
-	public void serialize(final javax.xml.namespace.QName parentQName,
-			javax.xml.stream.XMLStreamWriter xmlWriter)
-			throws javax.xml.stream.XMLStreamException,
-			org.apache.axis2.databinding.ADBException {
+	public void serialize(final javax.xml.namespace.QName parentQName, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException {
 		serialize(parentQName, xmlWriter, false);
 	}
 
-	public void serialize(final javax.xml.namespace.QName parentQName,
-			javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType)
-			throws javax.xml.stream.XMLStreamException,
-			org.apache.axis2.databinding.ADBException {
+	public void serialize(final javax.xml.namespace.QName parentQName, javax.xml.stream.XMLStreamWriter xmlWriter, boolean serializeType) throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException {
 
 		java.lang.String prefix = null;
 		java.lang.String namespace = null;
 
 		prefix = parentQName.getPrefix();
 		namespace = parentQName.getNamespaceURI();
-		writeStartElement(prefix, namespace, parentQName.getLocalPart(),
-				xmlWriter);
+		writeStartElement(prefix, namespace, parentQName.getLocalPart(), xmlWriter);
 
 		if (serializeType) {
 
-			java.lang.String namespacePrefix = registerPrefix(xmlWriter,
-					"http://webservice.damsfront.foresealife.com");
-			if ((namespacePrefix != null)
-					&& (namespacePrefix.trim().length() > 0)) {
-				writeAttribute("xsi",
-						"http://www.w3.org/2001/XMLSchema-instance", "type",
-						namespacePrefix + ":asyncOrderDataResponse", xmlWriter);
+			java.lang.String namespacePrefix = registerPrefix(xmlWriter, "http://webservice.damsfront.foresealife.com");
+			if ((namespacePrefix != null) && (namespacePrefix.trim().length() > 0)) {
+				writeAttribute("xsi", "http://www.w3.org/2001/XMLSchema-instance", "type", namespacePrefix + ":asyncOrderDataResponse", xmlWriter);
 			} else {
-				writeAttribute("xsi",
-						"http://www.w3.org/2001/XMLSchema-instance", "type",
-						"asyncOrderDataResponse", xmlWriter);
+				writeAttribute("xsi", "http://www.w3.org/2001/XMLSchema-instance", "type", "asyncOrderDataResponse", xmlWriter);
 			}
 
 		}
@@ -122,9 +102,7 @@ public class AsyncOrderDataResponse implements
 			if (local_return == null) {
 				// write the nil attribute
 
-				writeAttribute("xsi",
-						"http://www.w3.org/2001/XMLSchema-instance", "nil",
-						"1", xmlWriter);
+				writeAttribute("xsi", "http://www.w3.org/2001/XMLSchema-instance", "nil", "1", xmlWriter);
 
 			} else {
 
@@ -148,10 +126,7 @@ public class AsyncOrderDataResponse implements
 	/**
 	 * Utility method to write an element start tag.
 	 */
-	private void writeStartElement(java.lang.String prefix,
-			java.lang.String namespace, java.lang.String localPart,
-			javax.xml.stream.XMLStreamWriter xmlWriter)
-			throws javax.xml.stream.XMLStreamException {
+	private void writeStartElement(java.lang.String prefix, java.lang.String namespace, java.lang.String localPart, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 		java.lang.String writerPrefix = xmlWriter.getPrefix(namespace);
 		if (writerPrefix != null) {
 			xmlWriter.writeStartElement(namespace, localPart);
@@ -171,11 +146,7 @@ public class AsyncOrderDataResponse implements
 	/**
 	 * Util method to write an attribute with the ns prefix
 	 */
-	private void writeAttribute(java.lang.String prefix,
-			java.lang.String namespace, java.lang.String attName,
-			java.lang.String attValue,
-			javax.xml.stream.XMLStreamWriter xmlWriter)
-			throws javax.xml.stream.XMLStreamException {
+	private void writeAttribute(java.lang.String prefix, java.lang.String namespace, java.lang.String attName, java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 		if (xmlWriter.getPrefix(namespace) == null) {
 			xmlWriter.writeNamespace(prefix, namespace);
 			xmlWriter.setPrefix(prefix, namespace);
@@ -186,10 +157,7 @@ public class AsyncOrderDataResponse implements
 	/**
 	 * Util method to write an attribute without the ns prefix
 	 */
-	private void writeAttribute(java.lang.String namespace,
-			java.lang.String attName, java.lang.String attValue,
-			javax.xml.stream.XMLStreamWriter xmlWriter)
-			throws javax.xml.stream.XMLStreamException {
+	private void writeAttribute(java.lang.String namespace, java.lang.String attName, java.lang.String attValue, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 		if (namespace.equals("")) {
 			xmlWriter.writeAttribute(attName, attValue);
 		} else {
@@ -201,14 +169,10 @@ public class AsyncOrderDataResponse implements
 	/**
 	 * Util method to write an attribute without the ns prefix
 	 */
-	private void writeQNameAttribute(java.lang.String namespace,
-			java.lang.String attName, javax.xml.namespace.QName qname,
-			javax.xml.stream.XMLStreamWriter xmlWriter)
-			throws javax.xml.stream.XMLStreamException {
+	private void writeQNameAttribute(java.lang.String namespace, java.lang.String attName, javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
 		java.lang.String attributeNamespace = qname.getNamespaceURI();
-		java.lang.String attributePrefix = xmlWriter
-				.getPrefix(attributeNamespace);
+		java.lang.String attributePrefix = xmlWriter.getPrefix(attributeNamespace);
 		if (attributePrefix == null) {
 			attributePrefix = registerPrefix(xmlWriter, attributeNamespace);
 		}
@@ -231,9 +195,7 @@ public class AsyncOrderDataResponse implements
 	 * method to handle Qnames
 	 */
 
-	private void writeQName(javax.xml.namespace.QName qname,
-			javax.xml.stream.XMLStreamWriter xmlWriter)
-			throws javax.xml.stream.XMLStreamException {
+	private void writeQName(javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 		java.lang.String namespaceURI = qname.getNamespaceURI();
 		if (namespaceURI != null) {
 			java.lang.String prefix = xmlWriter.getPrefix(namespaceURI);
@@ -244,27 +206,18 @@ public class AsyncOrderDataResponse implements
 			}
 
 			if (prefix.trim().length() > 0) {
-				xmlWriter.writeCharacters(prefix
-						+ ":"
-						+ org.apache.axis2.databinding.utils.ConverterUtil
-								.convertToString(qname));
+				xmlWriter.writeCharacters(prefix + ":" + org.apache.axis2.databinding.utils.ConverterUtil.convertToString(qname));
 			} else {
 				// i.e this is the default namespace
-				xmlWriter
-						.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil
-								.convertToString(qname));
+				xmlWriter.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(qname));
 			}
 
 		} else {
-			xmlWriter
-					.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil
-							.convertToString(qname));
+			xmlWriter.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(qname));
 		}
 	}
 
-	private void writeQNames(javax.xml.namespace.QName[] qnames,
-			javax.xml.stream.XMLStreamWriter xmlWriter)
-			throws javax.xml.stream.XMLStreamException {
+	private void writeQNames(javax.xml.namespace.QName[] qnames, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
 		if (qnames != null) {
 			// we have to store this data until last moment since it is not
@@ -288,20 +241,12 @@ public class AsyncOrderDataResponse implements
 					}
 
 					if (prefix.trim().length() > 0) {
-						stringToWrite
-								.append(prefix)
-								.append(":")
-								.append(org.apache.axis2.databinding.utils.ConverterUtil
-										.convertToString(qnames[i]));
+						stringToWrite.append(prefix).append(":").append(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(qnames[i]));
 					} else {
-						stringToWrite
-								.append(org.apache.axis2.databinding.utils.ConverterUtil
-										.convertToString(qnames[i]));
+						stringToWrite.append(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(qnames[i]));
 					}
 				} else {
-					stringToWrite
-							.append(org.apache.axis2.databinding.utils.ConverterUtil
-									.convertToString(qnames[i]));
+					stringToWrite.append(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(qnames[i]));
 				}
 			}
 			xmlWriter.writeCharacters(stringToWrite.toString());
@@ -312,22 +257,17 @@ public class AsyncOrderDataResponse implements
 	/**
 	 * Register a namespace prefix
 	 */
-	private java.lang.String registerPrefix(
-			javax.xml.stream.XMLStreamWriter xmlWriter,
-			java.lang.String namespace)
-			throws javax.xml.stream.XMLStreamException {
+	private java.lang.String registerPrefix(javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace) throws javax.xml.stream.XMLStreamException {
 		java.lang.String prefix = xmlWriter.getPrefix(namespace);
 		if (prefix == null) {
 			prefix = generatePrefix(namespace);
-			javax.xml.namespace.NamespaceContext nsContext = xmlWriter
-					.getNamespaceContext();
+			javax.xml.namespace.NamespaceContext nsContext = xmlWriter.getNamespaceContext();
 			while (true) {
 				java.lang.String uri = nsContext.getNamespaceURI(prefix);
 				if (uri == null || uri.length() == 0) {
 					break;
 				}
-				prefix = org.apache.axis2.databinding.utils.BeanUtil
-						.getUniquePrefix();
+				prefix = org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
 			}
 			xmlWriter.writeNamespace(prefix, namespace);
 			xmlWriter.setPrefix(prefix, namespace);
@@ -339,24 +279,18 @@ public class AsyncOrderDataResponse implements
 	 * databinding method to get an XML representation of this object
 	 * 
 	 */
-	public javax.xml.stream.XMLStreamReader getPullParser(
-			javax.xml.namespace.QName qName)
-			throws org.apache.axis2.databinding.ADBException {
+	public javax.xml.stream.XMLStreamReader getPullParser(javax.xml.namespace.QName qName) throws org.apache.axis2.databinding.ADBException {
 
 		java.util.ArrayList elementList = new java.util.ArrayList();
 		java.util.ArrayList attribList = new java.util.ArrayList();
 
 		if (local_returnTracker) {
-			elementList.add(new javax.xml.namespace.QName(
-					"http://webservice.damsfront.foresealife.com", "return"));
+			elementList.add(new javax.xml.namespace.QName("http://webservice.damsfront.foresealife.com", "return"));
 
-			elementList.add(local_return == null ? null
-					: org.apache.axis2.databinding.utils.ConverterUtil
-							.convertToString(local_return));
+			elementList.add(local_return == null ? null : org.apache.axis2.databinding.utils.ConverterUtil.convertToString(local_return));
 		}
 
-		return new org.apache.axis2.databinding.utils.reader.ADBXMLStreamReaderImpl(
-				qName, elementList.toArray(), attribList.toArray());
+		return new org.apache.axis2.databinding.utils.reader.ADBXMLStreamReaderImpl(qName, elementList.toArray(), attribList.toArray());
 
 	}
 
@@ -375,9 +309,7 @@ public class AsyncOrderDataResponse implements
 		 * is a complex type, the reader is positioned at the end element of its
 		 * outer element
 		 */
-		public static AsyncOrderDataResponse parse(
-				javax.xml.stream.XMLStreamReader reader)
-				throws java.lang.Exception {
+		public static AsyncOrderDataResponse parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception {
 			AsyncOrderDataResponse object = new AsyncOrderDataResponse();
 
 			int event;
@@ -389,30 +321,21 @@ public class AsyncOrderDataResponse implements
 				while (!reader.isStartElement() && !reader.isEndElement())
 					reader.next();
 
-				if (reader.getAttributeValue(
-						"http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
-					java.lang.String fullTypeName = reader
-							.getAttributeValue(
-									"http://www.w3.org/2001/XMLSchema-instance",
-									"type");
+				if (reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance", "type") != null) {
+					java.lang.String fullTypeName = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance", "type");
 					if (fullTypeName != null) {
 						java.lang.String nsPrefix = null;
 						if (fullTypeName.indexOf(":") > -1) {
-							nsPrefix = fullTypeName.substring(0,
-									fullTypeName.indexOf(":"));
+							nsPrefix = fullTypeName.substring(0, fullTypeName.indexOf(":"));
 						}
 						nsPrefix = nsPrefix == null ? "" : nsPrefix;
 
-						java.lang.String type = fullTypeName
-								.substring(fullTypeName.indexOf(":") + 1);
+						java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(":") + 1);
 
 						if (!"asyncOrderDataResponse".equals(type)) {
 							// find namespace for the prefix
-							java.lang.String nsUri = reader
-									.getNamespaceContext().getNamespaceURI(
-											nsPrefix);
-							return (AsyncOrderDataResponse) ExtensionMapper
-									.getTypeObject(nsUri, type, reader);
+							java.lang.String nsUri = reader.getNamespaceContext().getNamespaceURI(nsPrefix);
+							return (AsyncOrderDataResponse) ExtensionMapper.getTypeObject(nsUri, type, reader);
 						}
 
 					}
@@ -429,20 +352,14 @@ public class AsyncOrderDataResponse implements
 				while (!reader.isStartElement() && !reader.isEndElement())
 					reader.next();
 
-				if (reader.isStartElement()
-						&& new javax.xml.namespace.QName(
-								"http://webservice.damsfront.foresealife.com",
-								"return").equals(reader.getName())) {
+				if (reader.isStartElement() && new javax.xml.namespace.QName("http://webservice.damsfront.foresealife.com", "return").equals(reader.getName())) {
 
-					nillableValue = reader.getAttributeValue(
-							"http://www.w3.org/2001/XMLSchema-instance", "nil");
-					if (!"true".equals(nillableValue)
-							&& !"1".equals(nillableValue)) {
+					nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance", "nil");
+					if (!"true".equals(nillableValue) && !"1".equals(nillableValue)) {
 
 						java.lang.String content = reader.getElementText();
 
-						object.set_return(org.apache.axis2.databinding.utils.ConverterUtil
-								.convertToString(content));
+						object.set_return(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
 
 					} else {
 
@@ -464,8 +381,7 @@ public class AsyncOrderDataResponse implements
 				if (reader.isStartElement())
 					// A start element we are not expecting indicates a trailing
 					// invalid property
-					throw new org.apache.axis2.databinding.ADBException(
-							"Unexpected subelement " + reader.getName());
+					throw new org.apache.axis2.databinding.ADBException("Unexpected subelement " + reader.getName());
 
 			} catch (javax.xml.stream.XMLStreamException e) {
 				throw new java.lang.Exception(e);
