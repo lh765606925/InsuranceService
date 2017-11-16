@@ -156,7 +156,7 @@ public class PolicyInfoAction extends BaseAction {
 	public String list() throws Exception {
 
 		if (offset == null) {
-			offset = "0";
+			offset = "0"
 		}
 		if (limit == null) {
 			limit = "10";
